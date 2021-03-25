@@ -13,25 +13,25 @@ Baliser la structure html avec des commentaires
 
 Établir le squelette de la page html
 
-        Header:
-            Intégration du logo et du menu
-                        -Ancrer le menu sur les catégories correspondantes (Hébergements/Activités)
+    Header:
+        Intégration du logo et du menu
+            -Ancrer le menu sur les catégories correspondantes (Hébergements/Activités)
         
-        Champ de recherche et filtres:
-            Mise en place des icônes (Prévoir flexbox)
-            Création de la barre de recherche 
+    Champ de recherche et filtres:
+            -Mise en place des icônes (Prévoir flexbox)
+            -Création de la barre de recherche 
 
-        Carte d'hébergement, et section "les plus populaires":
+    Carte d'hébergement, et section "les plus populaires":
             Mise en place des images (Prévoir grid ou flexbox)
 
         
-        Footer:
+    Footer:
             Mise en place des listes à puces (prévoir flexbox ou grid)
 
             ____________________________________________________________
 
                                     Étape 3 (Css)
-        Global:
+    Global:
 
             Définir la police: Raleway
             Mise en place du code couleurs 
@@ -63,4 +63,11 @@ Baliser la structure html avec des commentaires
     Carte d'hébergement, les plus populaires et Activités:
                 - Liens vides
                 - Cliquable dans leurs intégralités
+                - Mise en place de flexbox ou grid 
 
+    Footer:
+            Enlever les puces 
+            Catégories en gras
+            Mise en place de flexbox ou grid
+
+            ____________________________________________________________
