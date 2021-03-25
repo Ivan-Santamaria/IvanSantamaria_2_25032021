@@ -1,0 +1,38 @@
+                                                Partie Visuelle
+
+
+            Police:
+                Raleway
+
+            Code couleur:
+                Bleu : #0065FC (icônes, bouton de recherches et notes),  Bleu clair #DEEBFF ( liens, fond d'icônes)
+                Gris : #F2F2F2 pour les fonds de modules
+                Blanc: #FFFFFF pour le background de la page
+            
+            Photo: 
+                Optimiser les formats d'images
+_____________________________________________________________________________________________________________________________
+
+                                                Partie Technique:
+
+
+            Responsive basé sur la résolution d'un iPhone 8:
+                                                            @media only screen 
+                                                             and (device-width : 375px) 
+                                                             and (device-height : 667px) 
+                                                             and (-webkit-device-pixel-ratio : 2) { }
+
+            Barre de recherche:
+                - Champ de recherches permis.
+                - Bouton de recherche non-fonctionnel.
+
+            Filtres:
+                - Non-Fonctionnel
+                - Créer un effet au survol (Choix libre) (idées1 : basculement vers couleur primaire #0065FC )
+            
+            Carte d'hébergement:
+                - Liens vides
+                - Cliquable dans leurs intégralités 
+         
+             Menu:
+             les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
