@@ -10,7 +10,7 @@
                 Blanc: #FFFFFF pour le background de la page
             
             Photo: 
-                Optimiser les formats d'images
+                        Optimiser les formats d'images
 _____________________________________________________________________________________________________________________________
 
                                                 Partie Technique:
@@ -30,7 +30,7 @@ ________________________________________________________________________________
                 - Non-Fonctionnel
                 - Créer un effet au survol (Choix libre) (idées1 : basculement vers couleur primaire #0065FC )
             
-            Carte d'hébergement:
+            Carte d'hébergement, les plus populaires et Activités:
                 - Liens vides
                 - Cliquable dans leurs intégralités 
          
