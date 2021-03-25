@@ -1,0 +1,15 @@
+                                    Résolution
+
+
+
+            Responsive basé sur la résolution d'un iPhone 8:
+                                                            @media only screen 
+                                                             and (device-width : 375px) 
+                                                             and (device-height : 667px) 
+                                                             and (-webkit-device-pixel-ratio : 2) { }
+
+
+                                    Étape 1
+
+                    
+À établir ...
