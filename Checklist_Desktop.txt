@@ -1,0 +1,66 @@
+
+
+                                    Étape 1
+
+Créer un repository GitHub
+
+Analyser la maquette fournie
+
+Baliser la structure html avec des commentaires
+            ____________________________________________________________
+
+                                    Étape 2 (HTML)
+
+Établir le squelette de la page html
+
+        Header:
+            Intégration du logo et du menu
+                        -Ancrer le menu sur les catégories correspondantes (Hébergements/Activités)
+        
+        Champ de recherche et filtres:
+            Mise en place des icônes (Prévoir flexbox)
+            Création de la barre de recherche 
+
+        Carte d'hébergement, et section "les plus populaires":
+            Mise en place des images (Prévoir grid ou flexbox)
+
+        
+        Footer:
+            Mise en place des listes à puces (prévoir flexbox ou grid)
+
+            ____________________________________________________________
+
+                                    Étape 3 (Css)
+        Global:
+
+            Définir la police: Raleway
+            Mise en place du code couleurs 
+                -Fond général: Blanc
+                -Fond des modules: F2F2F2 (gris)
+                -Bouton de recherche, icône filtres, étoiles de notations, couleur au survol (boutons filtres):#0065FC (bleu)
+                -Lien du Menu et fond d'icônes: #DEEBFF (bleu clair)
+      
+    Header:
+
+            Positionner et gérer la taille du logo 
+            Activation du menu au survol et au clic
+        
+
+
+    Champ de recherche et filtres:
+
+            Gestion des tailles et couleurs
+            Mise en page Flexbox ou Grid
+
+         Champ de recherche:
+                -Pouvoir écrire
+                -Bouton désactivé
+            
+         Filtres:
+                - Effet au survol
+                - Non-Fonctionnel
+
+    Carte d'hébergement, les plus populaires et Activités:
+                - Liens vides
+                - Cliquable dans leurs intégralités
+
