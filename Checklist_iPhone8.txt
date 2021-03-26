@@ -12,4 +12,37 @@
                                     Étape 1
 
                     
-À établir ...
+        Modification de la disposition des éléments, en colonnes (2):
+
+                -header 
+                -Texte
+                -Zone de recherche 
+                -Onglets les plus populaires
+                -Onglets hébergements 
+                -Onglets activités
+                -Footer 
+                    -A propos
+                    -Nos hébergements
+                    -Assistance
+                    
+                
+        Disposition des colonnes:
+
+                - Header: 
+                    -50% gauche (187.5px), margin-left 10px, padding-left 10px
+                            -Logo (Reservia)
+                            -Hébergements
+                    -50% droite (187.5px),margin-right 10px, padding 10px
+                            -S'inscrire
+                            -Activités
+
+
+                -Textes et zones de recherche:
+
+
+                
+
+
+
+
+                
