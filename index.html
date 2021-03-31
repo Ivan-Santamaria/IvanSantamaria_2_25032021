@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
 
  <!-- En-tête de la page -->
     <title>Reservia</title>
@@ -28,10 +29,14 @@
                 <h1 class="TitreRecherche">Trouvez votre hébergement pour des vacances de rêve</h1>
                   <p class="TexteRecherche">En plein centre de ville ou en pleine nature</p>
 
-              <form method="post" action="https://www.lepetitballon.com/blog/histoire-pastis.html">
+<!-- Utilisation de "Get" pour garder le lien dans l'url afin de pouvoir partager la page-->
+              <form method="get" action="">
                   <p>
-                    <label for="Rechercher">Rechercher</label>
-                    <input type="text" name="Rechercher" id="Rechercher" value=" Marseille, France"/>   
+                    <label for="Rechercher">
+                      <i class="fas fa-map-marker-alt" ></i>
+                      <input type="text"   id="Rechercher" value=" Marseille, France"/>   
+                      <input type="submit" value="Rechercher"/>
+                    </label>
                   </p>
               
               </form>
