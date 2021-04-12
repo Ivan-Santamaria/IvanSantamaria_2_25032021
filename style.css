@@ -24,6 +24,11 @@
 
 }
 
+*
+{
+    font-family: ralewaythin_italic, ralewaythin;
+}
+
                                             /* Taille des photos*/
 .photohebergement {
     max-height: 99px;
