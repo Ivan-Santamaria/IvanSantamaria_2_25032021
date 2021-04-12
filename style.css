@@ -1,4 +1,4 @@
-
+                                            /* Polices*/
 @font-face {
     font-family: 'ralewaythin_italic';
     src: url('raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
@@ -22,4 +22,25 @@
     font-weight: normal;
     font-style: normal;
 
+}
+
+                                            /* Taille des photos*/
+.photohebergement {
+    max-height: 99px;
+	max-width: 150px;
+}
+.photohepopulaire
+{
+    max-height: 99px;
+	max-width: 150px; 
+}
+.photoactivité1
+{
+    max-height: 200px;
+	max-width: 150px; 
+}
+.photoactivité2
+{
+    max-height: 99px;
+	max-width: 150px; 
 }
