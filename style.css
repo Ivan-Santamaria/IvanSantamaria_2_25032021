@@ -24,10 +24,6 @@
 
 }
 
-*
-{
-    font-family: ralewaythin_italic, ralewaythin;
-}
 
                                             /* Taille des photos*/
 .photohebergement {
@@ -49,14 +45,25 @@
     max-height: 99px;
 	max-width: 150px; 
 }
+/*Général*/
+
+.body
+{
+    display: block;
+    margin-left: 10em;
+    margin-right: 10em;
+}
 
 
 
                                             /*Grid*/
 .Gridmain {
+
     display: grid;
     grid-template-columns: 5;
     grid-template-rows: 8;
+
+    
 
  }
 
@@ -103,3 +110,34 @@
     grid-row-start: 7;
     grid-row-end: 8;
  }
+
+
+                                            /*FlexBox*/
+
+#Menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right:20%;
+}
+.MenuNavLink:nth-child(1)
+{
+    order: 1;
+    padding: 1%;
+}
+.MenuNavLink:nth-child(2)
+{
+    order: 2;
+    padding: 1%;
+
+
+}
+.MenuNavLink:nth-child(3)
+{
+    order: 3;
+    padding: 1%;
+
+}
+                                            /*Géneral*/
+
