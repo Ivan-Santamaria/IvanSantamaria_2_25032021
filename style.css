@@ -1,36 +1,11 @@
                                             /* Polices*/
-                                            @font-face {
-    font-family: 'ralewaythin_italic';
-    src: url('raleway-italic-variablefont_wght-webfont.eot');
-    src: url('raleway-italic-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-            url('raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
-            url('raleway-italic-variablefont_wght-webfont.woff') format('woff'),
-            url('raleway-italic-variablefont_wght-webfont.ttf') format('truetype'),
-            url('raleway-italic-variablefont_wght-webfont.svg#ralewaythin_italic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'ralewaythin';
-    src: url('raleway-variablefont_wght-webfont.eot');
-    src: url('raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-            url('raleway-variablefont_wght-webfont.woff2') format('woff2'),
-            url('raleway-variablefont_wght-webfont.woff') format('woff'),
-            url('raleway-variablefont_wght-webfont.ttf') format('truetype'),
-            url('raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
-    font-weight: normal;
-    font-style: normal;
-                                            
-    
+                                        
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+   
+body {
+        font-family: "Raleway", "Sans serif";    
     }
   
-   
-    
 
                                             /* Taille des photos*/
 .photohebergement {
@@ -52,21 +27,9 @@
     max-height: 99px;
 	max-width: 150px; 
 }
-/*Général*/
-
-.body
-{
-    display: block;
-    margin-left: 10em;
-    margin-right: 10em;
-}
-h1  
-{
-   
-}
 
 
-                                            /*Grid*/
+                                            /*Disposition de la page*/
 .Gridmain {
 
     display: grid;
@@ -121,101 +84,90 @@ h1
     grid-row-start: 7;
     grid-row-end: 8;
  }
+                                             /*Géneral*/
 
 
-                                            /*FlexBox*/
+body
+{
+    display: block;
+    margin-left: 9%;
+    margin-right: 3%;
+}
+                                            /* Header*/ 
+
+.Header 
+{
+    float: left;
+    margin-top:1.6% ;
+}
+
+
+                                            /*Menu*/
 
 #Menu
 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin-right:20%;
-    margin-top: 1%;
+    justify-content: space-around;
+    padding-left: 60%;
+    margin-right:5%;
+    margin-top: 0%;
+    font-weight: 550;
+ 
+}
+.MenuNavLink
+{
+    text-decoration:none;
+    color: #0065fc;
+    padding: 1%;
+}
+.MenuNavLink:active
+{
+    color: #DEEBFF;
+}
+.MenuNavLink:hover
+{
+   
+    border-top: 2px #0065fc solid;
+    transition-duration: 0.05s;
+ 
 }
 .MenuNavLink:nth-child(1)
 {
+    border-top: 2px #0065fc solid;
     order: 1;
-    padding: 1%;
 }
 .MenuNavLink:nth-child(2)
 {
     order: 2;
-    padding: 1%;
+    color: black;
+}
+.MenuNavLink:nth-child(2):hover
+{
+    color: #0065fc;
 
-
+}
+.MenuNavLink:nth-child(2):active
+{
+    color: #DEEBFF; 
 }
 .MenuNavLink:nth-child(3)
 {
     order: 3;
-    padding: 1%;
-
 }
-                                            /*Géneral*/
-
-
-body
+.MenuNavLink:nth-child(3):hover
 {
-font-family: 'ralewaythin','ralewaythin_italic';
-margin-left: 10%;
-margin-right: 10%;
-
+    color: #DEEBFF;
 }
 
 
-.Header 
-{
-    float: left;
-    margin-top:3% ;
-}
 
-#BarreRecherche
-{
-    max-height: 50px;
-    max-width: 414px;
-    
-}
-.Search
-{
-  
-}
-.IcnSRC
-{
-    background-color: #F2F2F2;
-    padding: 1rem 1.25rem;
-    border-radius: 1rem 0 0 1rem;
-    text-align: center;
-    height: 3em;
-}
+                                            /* Barre de recherche */
 
-.Champ
 
-{
-    border-right: none;
-    border-left: none;
-    border-top: #F2F2F2 1px solid;
-    border-bottom: #F2F2F2 1px solid;
-    padding: 0 1.5rem;
-    box-sizing: border-box;
-    width: 14rem;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: "Raleway", "Sans serif";
-    height: 3em;
-}
-.Button 
-{
-    background-color: #0065FC;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 0 1rem 1rem 0;
-    padding: 0 1.5rem;
-    font-family: "Raleway", "Sans serif";
-    font-size: 1rem;
-    cursor: pointer;
-    height: 3em;
-}
+
+                                            /*Filtres*/
+
 
 #FlexFiltres
 {
@@ -231,6 +183,8 @@ margin-right: 10%;
     border: 0.1em black solid;
 
 }
+
+                                            /* Zone Principale*/
 
 #Résultats
 {
