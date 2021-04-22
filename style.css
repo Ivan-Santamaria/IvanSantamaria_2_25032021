@@ -35,10 +35,6 @@ body {
     display: grid;
     grid-template-columns: 5;
     grid-template-rows: 8;
-
-
-    
-
  }
 
  .Gridone
@@ -93,6 +89,8 @@ body
     margin-left: 9%;
     margin-right: 3%;
 }
+
+
                                             /* Header*/ 
 
 .Header 
@@ -113,7 +111,6 @@ body
     margin-right:5%;
     margin-top: -1.8%;
     font-weight: 500;
-
 }
 .MenuNavLink
 {
@@ -123,7 +120,6 @@ body
     padding: 1%;
     padding-top: 2em;
     width: 100%;
- 
 }
 .MenuNavLink:active
 {
@@ -131,15 +127,12 @@ body
 }
 .MenuNavLink:hover
 {
-   
     border-top: 3px #0065fc solid;
-
 }
 .MenuNavLink:nth-child(1)
 {
     border-top:3px #0065fc solid;
     order: 1;
- 
 }
 .MenuNavLink:nth-child(2)
 {
@@ -149,7 +142,6 @@ body
 .MenuNavLink:nth-child(2):hover
 {
     color: #0065fc;
-
 }
 .MenuNavLink:nth-child(2):active
 {
@@ -164,10 +156,56 @@ body
     color: #DEEBFF;
     border-top: none;
 }
-
-
+                                            /*Présentation*/
+.TitreRecherche
+{
+    font-size: 2em;
+    margin-top: 0.4em;
+}
+.TexteRecherche
+{
+    margin-top: -1.2em;
+}
 
                                             /* Barre de recherche */
+
+#BarreRecherche
+{   
+
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+}
+.IcnSRC
+{
+
+    background-color: #F2F2F2;
+    padding: 1rem;
+    border-radius: 1em 0 0 1rem;
+    text-align: center;
+}
+.Rechercher
+{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding:  1rem ;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.Button
+{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
 
 
@@ -179,13 +217,59 @@ body
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: 65%;
    
 }
 
-.FlexFilter
+.FiltreDeco
 {
-    border: 0.1em black solid;
+    color: #0065fc;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+
+}
+.Filtre
+{
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.Motsclefs
+{
+    padding:1rem ;
+    font-weight: bold;
+}
+
+.LogoInfo
+{
+    color: #0065fc;
+    background-color: ;
+    border: 1px #d9d9d9 solid;
+    border-radius: 50%;
+    height: 1.75rem;
+    width: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TextInfo
+{
+    display: flex;
+    width: 31%;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
