@@ -98,7 +98,7 @@ body
 .Header 
 {
     float: left;
-    margin-top:1.6% ;
+    margin-top:1% ;
 }
 
 
@@ -111,15 +111,19 @@ body
     justify-content: space-around;
     padding-left: 60%;
     margin-right:5%;
-    margin-top: 0%;
-    font-weight: 550;
- 
+    margin-top: -1.8%;
+    font-weight: 500;
+
 }
 .MenuNavLink
 {
     text-decoration:none;
+    text-align: center;
     color: #0065fc;
     padding: 1%;
+    padding-top: 2em;
+    width: 100%;
+ 
 }
 .MenuNavLink:active
 {
@@ -128,14 +132,14 @@ body
 .MenuNavLink:hover
 {
    
-    border-top: 2px #0065fc solid;
-    transition-duration: 0.05s;
- 
+    border-top: 3px #0065fc solid;
+
 }
 .MenuNavLink:nth-child(1)
 {
-    border-top: 2px #0065fc solid;
+    border-top:3px #0065fc solid;
     order: 1;
+ 
 }
 .MenuNavLink:nth-child(2)
 {
@@ -158,6 +162,7 @@ body
 .MenuNavLink:nth-child(3):hover
 {
     color: #DEEBFF;
+    border-top: none;
 }
 
 
