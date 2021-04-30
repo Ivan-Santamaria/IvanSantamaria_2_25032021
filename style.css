@@ -8,9 +8,11 @@ body {
   
 
                                             /* Taille des photos*/
-.photohebergement {
-    max-height: 99px;
-	max-width: 150px;
+.photohebergement
+{
+    max-width: 100%;
+	height: auto;
+    
 }
 .photohepopulaire
 {
@@ -60,10 +62,12 @@ body {
  }
 .Gridfour
 {
-    grid-column-start: 3;
-    grid-column-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
+    margin-left: 20%;
+    
  }
  .Gridfive
  {
@@ -87,7 +91,8 @@ body
 {
     display: block;
     margin-left: 9%;
-    margin-right: 3%;
+    margin-right: 0%;
+
 }
 
 
@@ -273,11 +278,20 @@ body
 
 }
 
-                                            /* Zone Principale*/
+                                            /* Zone Hébergement*/
 
+
+ h2
+ {
+     padding-left: 2%;
+ }                                           
 #Résultats
 {
-
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    width: 80%;
+    max-height: fit-content;
+  
 }
 
 .Ligne1
@@ -285,7 +299,13 @@ body
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 20%;
+    margin-bottom: 2%;
+    padding-left: 2%;
+    
+    
 }
 
 .Ligne2
@@ -293,17 +313,79 @@ body
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 20%;
+    padding-left: 2%;
 }
 
 .photohebergement
 {
- border: 0.1em black solid;
+    border: 0.1em black solid;
+    max-width: 100%;
+    max-height: fit-content;
+    overflow: auto;
+    object-fit: cover;
 
 }
 
 .Result
 {
     border: 0.1em black solid;
-    background-color: blue;
+    background-color:#FFFFFF;
+    border-radius: 10%10%10%10%;
+    margin-left: 2%;
+    overflow: hidden;
+    object-fit: cover;
+    text-align: start;
+}
+
+.descr
+{
+    padding-left: 2%;
+}
+.Lieu
+{
+    font-weight: bold;
+}
+.Prix
+{
+    font-weight: bold;
+}
+.Notepos
+{
+    color: #0065fc;
+}
+.Noteneg
+{
+    color: #d9d9d9;
+}
+
+
+                                            /* Catégorie populaire*/
+
+.ICNtend
+{
+margin: 15%;
+}
+#Populaire
+{
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    width: 200%;
+    height: 95%;
+    margin: 15%;
+
+  
+}
+.Popresult
+{
+ 
+    border: 0.1em black solid;
+    background-color:#FFFFFF;
+    border-radius: 10%10%10%10%;
+    margin-left: 2%;
+    overflow: hidden;
+    object-fit: cover;
+    text-align: start;
 }
