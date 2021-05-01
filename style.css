@@ -29,7 +29,7 @@
 }
 
 
-                                            /*Disposition de la page*/
+                                            /*Général*/
 .Gridmain 
 {
 
@@ -38,25 +38,371 @@ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 grid-template-rows: 1fr 3fr 7fr 7fr 3fr;
 }
 
+                    body
+                    {
+                        font-family: "Raleway", "Sans serif";   
+                        display: block;
+                        width: 1440px;
+                        margin-left: 9%;
+                        margin-right: 9%;
+
+                    }
+
+                    h2
+                    {
+                        padding-left: 2%;
+                    }    
+
+                                            /*GRID 1*/
+
 .Gridone
 {
 grid-column-start: 1;
 grid-column-end: 8;
 grid-row-start: 1;
 }
+
+/* Header*/ 
+
+                    .Header 
+                    {
+                        float: left;
+                        margin-top:1% ;
+                    }
+
+
+/*Menu*/
+
+                    #Menu
+                    {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        padding-left: 60%;
+                        margin-right:5%;
+                        margin-top: -1.8%;
+                        font-weight: 500;
+                    }
+                    .MenuNavLink
+                    {
+                        text-decoration:none;
+                        text-align: center;
+                        color: #0065fc;
+                        padding: 1%;
+                        padding-top: 2em;
+                        width: 100%;
+                    }
+                    .MenuNavLink:active
+                    {
+                        color: #DEEBFF;
+                    }
+                    .MenuNavLink:hover
+                    {
+                        border-top: 3px #0065fc solid;
+                    }
+                    .MenuNavLink:nth-child(1)
+                    {
+                        border-top:3px #0065fc solid;
+                        order: 1;
+                    }
+                    .MenuNavLink:nth-child(2)
+                    {
+                        order: 2;
+                        color: black;
+                    }
+                    .MenuNavLink:nth-child(2):hover
+                    {
+                        color: #0065fc;
+                    }
+                    .MenuNavLink:nth-child(2):active
+                    {
+                        color: #DEEBFF; 
+                    }
+                    .MenuNavLink:nth-child(3)
+                    {
+                        order: 3;
+                    }
+                    .MenuNavLink:nth-child(3):hover
+                    {
+                        color: #DEEBFF;
+                        border-top: none;
+                    }
+
+
+
+                                            /*Grid 2*/
+
+
+
 .Gridtwo
 {
 grid-column-start: 1;
 grid-column-end: 8;
 grid-row-start: 2;
 }
+
+/*Présentation*/
+                    .TitreRecherche
+                    {
+                        font-size: 2em;
+                        margin-top: 0.4em;
+                    }
+                    .TexteRecherche
+                    {
+                        margin-top: -1.2em;
+                    }
+                    
+/* Barre de recherche */
+                    
+                    #BarreRecherche
+                    {   
+                    
+                        margin-top: 1%;
+                        margin-bottom: 2.5%;
+                    }
+                    .IcnSRC
+                    {
+                    
+                        background-color: #F2F2F2;
+                        padding: 1rem;
+                        border-radius: 1em 0 0 1rem;
+                        text-align: center;
+                    }
+                    .Rechercher
+                    {
+                        border-right: none;
+                        border-left: none;
+                        border-top: #F2F2F2 1px solid;
+                        border-bottom: #F2F2F2 1px solid;
+                        padding:  1rem ;
+                        box-sizing: border-box;
+                        width: 14rem;
+                        font-size: 1rem;
+                        font-weight: bold;
+                    }
+                    .Button
+                    {
+                        background-color: #0065FC;
+                        color: white;
+                        font-weight: bold;
+                        border: none;
+                        border-radius: 0 1rem 1rem 0;
+                        padding: 1rem;
+                        font-size: 1rem;
+                        cursor: pointer;
+                    }
+                    
+                    
+                    
+/*Filtres*/
+                    
+                    
+                    #FlexFiltres
+                    {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 65%;
+                        
+                    }
+                    
+                    .FiltreDeco
+                    {
+                        color: #0065fc;
+                        background-color: #DEEBFF;
+                        border-radius: 50%;
+                        height: 3rem;
+                        width: 3rem;
+                        min-height: 3.5rem;
+                        min-width: 3.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: -2px;
+                    
+                    }
+                    .Filtre
+                    {
+                        display: flex;
+                        align-items: center;
+                        border: 2px solid #d9d9d9;
+                        border-radius: 2rem;
+                        margin-bottom: 1rem;
+                        cursor: pointer;
+                    }
+                    .Motsclefs
+                    {
+                        padding:1rem ;
+                        font-weight: bold;
+                    }
+                    
+                    .LogoInfo
+                    {
+                        color: #0065fc;
+                        background-color: ;
+                        border: 1px #d9d9d9 solid;
+                        border-radius: 50%;
+                        height: 1.75rem;
+                        width: 1.75rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .TextInfo
+                    {
+                        display: flex;
+                        width: 31%;
+                        justify-content: space-between;
+                        align-items: center;
+                    
+                    }
+
 .Gridthree
 {
 grid-column-start: 1;
 grid-column-end: 6;
 grid-row-start: 3;
 background-color: #F2F2F2;
+border-radius: 1.5rem;
+padding: 2rem;
 }
+
+/* Zone Hébergement*/
+                
+                    #Résultats
+                    {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr;
+                        
+                        border-radius: 1.5rem;
+                        max-height: fit-content;
+                        margin-right: 2%;                       
+                        
+                    }      
+
+                    .Result-col1-row2
+                    {
+                        grid-column-start: 1;
+                        grid-row-start: 2;
+                    
+                        background-color: white;
+                        padding: 0.375rem;
+                        border-radius: 1.25rem;
+                        box-shadow: 0 0 16px #0000002e;
+                        box-sizing: border-box;
+                        height: 100%;
+                    }
+                    
+                    .Result-col2-row2
+                    {
+                        grid-column-start: 2;
+                        grid-row-start: 2;
+                    
+                        background-color: white;
+                        padding: 0.375rem;
+                        border-radius: 1.25rem;
+                        box-shadow: 0 0 16px #0000002e;
+                        box-sizing: border-box;
+                        height: 100%;
+                    }
+                    .Result-col3-row2
+                    {
+                        grid-column-start: 3;
+                        grid-row-start: 2;
+                    
+                        background-color: white;
+                        padding: 0.375rem;
+                        border-radius: 1.25rem;
+                        box-shadow: 0 0 16px #0000002e;
+                        box-sizing: border-box;
+                        height: 100%;
+                    }
+                    
+                    .Result-col1-row3
+                    {
+                        grid-column-start: 1;
+                        grid-row-start: 3;
+                    
+                        background-color: white;
+                        padding: 0.375rem;
+                        border-radius: 1.25rem;
+                        box-shadow: 0 0 16px #0000002e;
+                        box-sizing: border-box;
+                        height: 100%;
+                    }
+                    
+                    .Result-col2-row3
+                    {
+                        grid-column-start: 2;
+                        grid-row-start: 3;
+                    
+                        background-color: white;
+                        padding: 0.375rem;
+                        border-radius: 1.25rem;
+                        box-shadow: 0 0 16px #0000002e;
+                        box-sizing: border-box;
+                        height: 100%;
+                    }
+                    
+                    .Result-col3-row3
+                    {
+                        grid-column-start: 3;
+                        grid-row-start: 3;
+                    
+                        background-color: white;
+                        padding: 0.375rem;
+                        border-radius: 1.25rem;
+                        box-shadow: 0 0 16px #0000002e;
+                        box-sizing: border-box;
+                        height: 100%;
+                    }
+                    
+                    
+                    
+                    .photohebergement
+                    {
+                        border: 0.1em black solid;
+                        max-width: 100%;
+                        max-height: fit-content;
+                        overflow: auto;
+                        object-fit: cover;
+                    
+                    }
+                    
+                    .Result
+                    {
+                        border: 0.1em black solid;
+                        background-color:#FFFFFF;
+                        border-radius: 10%10%10%10%;
+                        margin-left: 2%;
+                        overflow: hidden;
+                        object-fit: cover;
+                        text-align: start;
+                    }
+                    
+                    .descr
+                    {
+                        padding-left: 2%;
+                    }
+                    .Lieu
+                    {
+                        font-weight: bold;
+                    }
+                    .Prix
+                    {
+                        font-weight: bold;
+                    }
+                    .Notepos
+                    {
+                        color: #0065fc;
+                    }
+                    .Noteneg
+                    {
+                        color: #d9d9d9;
+                    }
+
 .Gridfour
 {
 grid-column-start: 6;
@@ -64,6 +410,29 @@ grid-column-end: 8;
 grid-row-start: 3;
 
 }
+
+/* Catégorie populaire*/
+
+                    .ICNtend
+                    {
+                    margin: 15%;
+                    }
+                    #Populaire
+                    {
+                        background-color: #F2F2F2;
+                        border-radius: 1.5rem;
+                        margin-left: 2%;
+                    
+                        
+                    }
+                    .Popresult
+                    {
+                        
+                        border: 0.1em black solid;
+                        background-color:#FFFFFF;
+                        border-radius: 10%10%10%10%;
+                        margin-left: 2%;
+                    }
 .Gridfive
 {
 grid-column-start: 1;
@@ -81,318 +450,5 @@ grid-row-end: 8;
                                                 /*Géneral*/
 
 
-body
-{
-    font-family: "Raleway", "Sans serif";   
-    display: block;
-    width: 1440px;
-    margin-left: 9%;
-    margin-right: 9%;
-
-}
 
 
-                                            /* Header*/ 
-
-.Header 
-{
-    float: left;
-    margin-top:1% ;
-}
-
-
-                                            /*Menu*/
-
-#Menu
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 60%;
-    margin-right:5%;
-    margin-top: -1.8%;
-    font-weight: 500;
-}
-.MenuNavLink
-{
-    text-decoration:none;
-    text-align: center;
-    color: #0065fc;
-    padding: 1%;
-    padding-top: 2em;
-    width: 100%;
-}
-.MenuNavLink:active
-{
-    color: #DEEBFF;
-}
-.MenuNavLink:hover
-{
-    border-top: 3px #0065fc solid;
-}
-.MenuNavLink:nth-child(1)
-{
-    border-top:3px #0065fc solid;
-    order: 1;
-}
-.MenuNavLink:nth-child(2)
-{
-    order: 2;
-    color: black;
-}
-.MenuNavLink:nth-child(2):hover
-{
-    color: #0065fc;
-}
-.MenuNavLink:nth-child(2):active
-{
-    color: #DEEBFF; 
-}
-.MenuNavLink:nth-child(3)
-{
-    order: 3;
-}
-.MenuNavLink:nth-child(3):hover
-{
-    color: #DEEBFF;
-    border-top: none;
-}
-                                            /*Présentation*/
-.TitreRecherche
-{
-    font-size: 2em;
-    margin-top: 0.4em;
-}
-.TexteRecherche
-{
-    margin-top: -1.2em;
-}
-
-                                            /* Barre de recherche */
-
-#BarreRecherche
-{   
-
-    margin-top: 1%;
-    margin-bottom: 2.5%;
-}
-.IcnSRC
-{
-
-    background-color: #F2F2F2;
-    padding: 1rem;
-    border-radius: 1em 0 0 1rem;
-    text-align: center;
-}
-.Rechercher
-{
-    border-right: none;
-    border-left: none;
-    border-top: #F2F2F2 1px solid;
-    border-bottom: #F2F2F2 1px solid;
-    padding:  1rem ;
-    box-sizing: border-box;
-    width: 14rem;
-    font-size: 1rem;
-    font-weight: bold;
-}
-.Button
-{
-    background-color: #0065FC;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 0 1rem 1rem 0;
-    padding: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-
-
-                                            /*Filtres*/
-
-
-#FlexFiltres
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 65%;
-    
-}
-
-.FiltreDeco
-{
-    color: #0065fc;
-    background-color: #DEEBFF;
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
-    min-height: 3.5rem;
-    min-width: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: -2px;
-
-}
-.Filtre
-{
-    display: flex;
-    align-items: center;
-    border: 2px solid #d9d9d9;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-}
-.Motsclefs
-{
-    padding:1rem ;
-    font-weight: bold;
-}
-
-.LogoInfo
-{
-    color: #0065fc;
-    background-color: ;
-    border: 1px #d9d9d9 solid;
-    border-radius: 50%;
-    height: 1.75rem;
-    width: 1.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.TextInfo
-{
-    display: flex;
-    width: 31%;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-                                            /* Zone Hébergement*/
-
-
-    h2
-    {
-        padding-left: 2%;
-    }                                           
-#Résultats
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
- 
-    border-radius: 1.5rem;
-    max-height: fit-content;
-    margin-right: 2%;
-    
-}
-
-
-.Result-col1-row2
-{
-    grid-column-start: 1;
-    grid-row-start: 2;
-}
-
-.Result-col2-row2
-{
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-.Result-col3-row2
-{
-    grid-column-start: 3;
-    grid-row-start: 2;
-}
-
-.Result-col1-row3
-{
-    grid-column-start: 1;
-    grid-row-start: 3;
-}
-
-.Result-col2-row3
-{
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-
-.Result-col3-row3
-{
-    grid-column-start: 3;
-    grid-row-start: 3;
-}
-
-
-
-.photohebergement
-{
-    border: 0.1em black solid;
-    max-width: 100%;
-    max-height: fit-content;
-    overflow: auto;
-    object-fit: cover;
-
-}
-
-.Result
-{
-    border: 0.1em black solid;
-    background-color:#FFFFFF;
-    border-radius: 10%10%10%10%;
-    margin-left: 2%;
-    overflow: hidden;
-    object-fit: cover;
-    text-align: start;
-}
-
-.descr
-{
-    padding-left: 2%;
-}
-.Lieu
-{
-    font-weight: bold;
-}
-.Prix
-{
-    font-weight: bold;
-}
-.Notepos
-{
-    color: #0065fc;
-}
-.Noteneg
-{
-    color: #d9d9d9;
-}
-
-
-                                            /* Catégorie populaire*/
-
-.ICNtend
-{
-margin: 15%;
-}
-#Populaire
-{
-    background-color: #F2F2F2;
-    border-radius: 1.5rem;
-    margin-left: 2%;
-
-    
-}
-.Popresult
-{
-    
-    border: 0.1em black solid;
-    background-color:#FFFFFF;
-    border-radius: 10%10%10%10%;
-    margin-left: 2%;
-}
