@@ -6,11 +6,7 @@
     
 
                                             /* Taille des photos*/
-.photohepopulaire
-{
-    max-height: 99px;
-    max-width: 150px; 
-}
+
 .photoactivité1
 {
     max-height: 200px;
@@ -26,10 +22,10 @@
                                             /*Général*/
 .Gridmain 
 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5% 15% 30% 40% 10%;
 
-display: grid;
-grid-template-columns: repeat(8 1fr);
-grid-template-rows: 1fr 3fr 7fr 7fr 3fr;
 }
 
                     body
@@ -73,7 +69,6 @@ grid-row-start: 1;
                         flex-direction: row;
                         justify-content: space-around;
                         padding-left: 60%;
-                        margin-right:5%;
                         margin-top: -1.8%;
                         font-weight: 500;
                     }
@@ -154,6 +149,11 @@ grid-row-start: 2;
                         margin-top: 1%;
                         margin-bottom: 2.5%;
                     }
+
+                    .recherche 
+                    {   
+                         margin-top: -2.5em;  
+                    }
                     .IcnSRC
                     {
                     
@@ -184,13 +184,8 @@ grid-row-start: 2;
                         padding: 1rem;
                         font-size: 1rem;
                         cursor: pointer;
-                    }
-                    
-                    
-                    
-/*Filtres*/
-                    
-                    
+                    }                  
+/*Filtres*/                 
                     #FlexFiltres
                     {
                         display: flex;
@@ -251,30 +246,34 @@ grid-row-start: 2;
                         align-items: center;
                     
                     }
-
 .Gridthree
 {
-grid-column-start: 1;
-grid-column-end: 6;
-grid-row-start: 3;
-background-color: #F2F2F2;
-border-radius: 1.5rem;
-padding: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    margin-top: -3%;
 }
-
 /* Zone Hébergement*/
-                
+                    .Bulle
+                    {
+                        height: 200px;
+                        width: 255px;
+                    }
                     #Résultats
                     {
                         display: grid;
-                        grid-template-columns: repeat(3 1fr);
-                        grid-template-rows: 1fr;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr 2fr 3fr;
                         grid-column-gap: 2rem;
                         grid-row-gap: 2rem;
+                        width: 88%;
+                        height: 82%;
+                        background-color: #F2F2F2;
                         border-radius: 1.5rem;
-                        max-height: fit-content;
-                        margin-right: 2%;                       
-                        
+                        padding-left: 1.5rem;
+                        padding-bottom: 6.35rem;
+                    
+
                     }      
                     .HouseTitle
                     {
@@ -287,12 +286,13 @@ padding: 2rem;
                         grid-row-start: 2;
                     
                         background-color: white;
-                        padding: 0.375rem;
+
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
-                        box-sizing: border-box;
-                        height: 100%;
+
+                       
                     }
+                
                     
                     .Result-col2-row2
                     {
@@ -300,11 +300,11 @@ padding: 2rem;
                         grid-row-start: 2;
                     
                         background-color: white;
-                        padding: 0.375rem;
+
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
-                        box-sizing: border-box;
-                        height: 100%;
+
+                        
                     }
                     .Result-col3-row2
                     {
@@ -312,50 +312,44 @@ padding: 2rem;
                         grid-row-start: 2;
                     
                         background-color: white;
-                        padding: 0.375rem;
+
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
-                        box-sizing: border-box;
-                        height: 100%;
+
+                        
                     }
                     
                     .Result-col1-row3
                     {
                         grid-column-start: 1;
                         grid-row-start: 3;
-                    
                         background-color: white;
-                        padding: 0.375rem;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
-                        box-sizing: border-box;
-                        height: 100%;
+
+                        
                     }
                     
                     .Result-col2-row3
                     {
                         grid-column-start: 2;
                         grid-row-start: 3;
-                    
                         background-color: white;
-                        padding: 0.375rem;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
-                        box-sizing: border-box;
-                        height: 100%;
+
+                        
                     }
                     
                     .Result-col3-row3
                     {
                         grid-column-start: 3;
                         grid-row-start: 3;
-                    
                         background-color: white;
-                        padding: 0.375rem;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
-                        box-sizing: border-box;
-                        height: 100%;
+
+                        
                     }
                     
                     
@@ -363,24 +357,14 @@ padding: 2rem;
                     .photohebergement
                     {
                         background-color: white;
-                        padding: 0.375rem;
-                        border-radius: 1.5rem;
-                        box-shadow: 0 0 16px #0000002e;
+                        padding: 0.300rem;
+                        border-top-left-radius: 1.5em;
+                        border-top-right-radius: 1.5em;
                         box-sizing: border-box;
-                        max-width: 100%;
-                      clip-path: inset( 5px 5px 5px 5px);
-                    
-                    }
-                    
-                    .Result
-                    {
-                        border: 0.1em black solid;
-                        background-color:#FFFFFF;
-                        border-radius: 10%10%10%10%;
-                        margin-left: 2%;
-                        overflow: hidden;
+                        width: 100%;
                         object-fit: cover;
-                        text-align: start;
+                        height: 58%;
+                    
                     }
                     
                     .descr
@@ -404,41 +388,113 @@ padding: 2rem;
                         color: #d9d9d9;
                     }
 
+                    .More 
+                    {
+                        grid-row-start: 4;
+                        font-weight: 700;
+                        color: black;
+                        text-decoration: none;
+                    }
+                    .More:visited
+                    {
+                        display: none;
+                    }
+                    .More:hover
+                    {
+                        color: #565656;   
+                    }
 .Gridfour
 {
-grid-column-start: 6;
-grid-column-end: 8;
-grid-row-start: 3;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    margin-left: 20%;
+    padding-right: 12%;
+    margin-top: -8%;
 
 }
 
 /* Catégorie populaire*/
 
+
                     .ICNtend
                     {
-                    margin: 15%;
+                    margin: 18%;
+
+                    }
+                    .Titlepop
+                    {
+                        padding-left: 7%;
+                    }
+
+                    .pop
+                    {
+                        height: 140px;
+                        width: 384px;
+                        margin-left: 8%;
+                        
+                        
                     }
                     #Populaire
                     {
+                        display: grid;
+                        grid-row-gap: 2rem;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr 3fr 3fr 3fr;
                         background-color: #F2F2F2;
                         border-radius: 1.5rem;
-                        margin-left: 2%;
-                    
+                        height: 95.1%;
+                        width: 112%;
+                        margin-top: 4.4%;
+                        margin-left: -1%;
                         
                     }
-                    .Popresult
+                    .Popresult-1
                     {
+                    
                         
-                        border: 0.1em black solid;
-                        background-color:#FFFFFF;
-                        border-radius: 10%10%10%10%;
-                        margin-left: 2%;
+                        background-color: white;
+                        border-radius: 1.25rem;
+                        box-shadow: 0 0 16px #0000002e;
+                    }
+                    .Popresult-2
+                    {
+
+                        background-color: white;
+                        border-radius: 1.25rem;
+                        box-shadow: 0 0 16px #0000002e;
+                    }
+                    .Popresult-3
+                    {
+                        grid-row: ;
+                        background-color: white;
+                        border-radius: 1.25rem;
+                        box-shadow: 0 0 16px #0000002e;
+                    }
+                    .photohepopulaire
+                    {
+                        float: left;
+                        background-color: white;
+                        padding: 0.300rem;
+                        border-top-left-radius: 1.5em;
+                        border-bottom-left-radius: 1.5em;
+                        box-sizing: border-box;
+                        width: 37%;
+                        height: inherit;
+                        object-fit: cover;
+                    }
+                        
+                    }
+                    .descrpop
+                    {
+                        text-align: center;
                     }
 .Gridfive
 {
 grid-column-start: 1;
 grid-column-end: 8;
 grid-row-start: 4;
+
 }
                     #Activity
                     {
@@ -545,6 +601,7 @@ grid-column-start: 1;
 grid-column-end: 8;
 grid-row-start: 5;
 grid-row-end: 8;
+background-color: #F2F2F2;
 }
 
                     .About
@@ -569,7 +626,3 @@ grid-row-end: 8;
 
 
                                                 /*Géneral*/
-
-
-
-
