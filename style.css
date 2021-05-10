@@ -67,10 +67,14 @@ grid-row-start: 1;
                     {
                         display: flex;
                         flex-direction: row;
-                        justify-content: space-around;
-                        padding-left: 60%;
-                        margin-top: -1.8%;
+                        justify-content: center;
+                        padding-left: 55%;
+                        margin-left: 11%;
+                        margin-right: 2%;
+                        margin-top: -1.9%;
                         font-weight: 500;
+                        flex-wrap: nowrap;
+                        align-items: baseline;
                     }
                     .MenuNavLink
                     {
@@ -264,15 +268,14 @@ grid-row-start: 2;
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr;
                         grid-template-rows: 1fr 2fr 3fr;
-                        grid-column-gap: 2rem;
+                        grid-column-gap: 0rem;
                         grid-row-gap: 2rem;
-                        width: 88%;
+                        width: 83%;
                         height: 82%;
                         background-color: #F2F2F2;
                         border-radius: 1.5rem;
                         padding-left: 1.5rem;
                         padding-bottom: 6.35rem;
-                    
 
                     }      
                     .HouseTitle
@@ -284,13 +287,9 @@ grid-row-start: 2;
                     {
                         grid-column-start: 1;
                         grid-row-start: 2;
-                    
                         background-color: white;
-
                         border-radius: 1.25rem;
-                        box-shadow: 0 0 16px #0000002e;
-
-                       
+                        box-shadow: 0 0 16px #0000002e;        
                     }
                 
                     
@@ -367,18 +366,23 @@ grid-row-start: 2;
                     
                     }
                     
-                    .descr
+                    .descresult
                     {
-                        padding-left: 2%;
+                        padding-left: 5%;
+                        margin-top: 0%;
                     }
+
+                  
                     .Lieu
                     {
                         font-weight: bold;
+                        font-size: 1.2rem;
                     }
                     .Prix
                     {
                         font-weight: bold;
                     }
+
                     .Notepos
                     {
                         color: #0065fc;
@@ -408,8 +412,8 @@ grid-row-start: 2;
     grid-column-start: 5;
     grid-column-end: 8;
     grid-row-start: 3;
-    margin-left: 20%;
-    padding-right: 12%;
+    margin-left: 13%;
+    padding-right: 19%;
     margin-top: -8%;
 
 }
@@ -426,14 +430,23 @@ grid-row-start: 2;
                     {
                         padding-left: 7%;
                     }
+                    .descrpop
+                    {
 
+                    }
                     .pop
                     {
                         height: 140px;
                         width: 384px;
-                        margin-left: 8%;
-                        
-                        
+                        margin-left: 8%;   
+                    }
+                    .NotePop
+                    {
+                        margin-top: 15%;
+                    }
+                    .NotePop2
+                    {
+                        margin-top: 10%;
                     }
                     #Populaire
                     {
@@ -479,7 +492,7 @@ grid-row-start: 2;
                         border-top-left-radius: 1.5em;
                         border-bottom-left-radius: 1.5em;
                         box-sizing: border-box;
-                        width: 37%;
+                        width: 33%;
                         height: inherit;
                         object-fit: cover;
                     }
@@ -499,8 +512,9 @@ grid-row-start: 4;
                     #Activity
                     {
                         display: grid;
-                        grid-template-columns: repeat(8 1fr);
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                         grid-template-rows: 1fr 1fr 1fr;
+                        width: 95%;
                     }
                     .ActivityDescr
                     {
