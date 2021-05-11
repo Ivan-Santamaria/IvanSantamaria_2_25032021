@@ -673,6 +673,13 @@
 
 @media screen and (max-width: 375px)
 {
+    body
+    {
+        font-family: "Raleway", "Sans serif";   
+        display: block;
+        width: 375px;
+        margin: 0.5%;
 
+    }
 
 }
