@@ -10,8 +10,7 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 5% 15% 30% 40%;
-    grid-row-gap: 1em;
+    grid-template-rows: 6em 20em 40em 30em 30em 5em;
 
 }
 
@@ -41,9 +40,9 @@
 
 .Gridone
 {
-grid-column-start: 1;
-grid-column-end: 8;
-grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
 }
 
 /* Header*/ 
@@ -123,9 +122,9 @@ grid-row-start: 1;
 
 .Gridtwo
 {
-grid-column-start: 1;
-grid-column-end: 8;
-grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 2;
 }
 
 /*Présentation*/
@@ -420,7 +419,20 @@ grid-row-start: 2;
 
 /* Catégorie populaire*/
 
-
+                    #Populaire
+                    {
+                        display: grid;
+                        grid-row-gap: 2rem;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr 3fr 3fr 3fr;
+                        background-color: #F2F2F2;
+                        border-radius: 1.5rem;
+                        height: 94.5%;
+                        width: 112%;
+                        margin-top: 4.4%;
+                        margin-left: -1%;
+                        
+                    }
                     .ICNtend
                     {
                     margin: 18%;
@@ -448,20 +460,7 @@ grid-row-start: 2;
                     {
                         margin-top: 10%;
                     }
-                    #Populaire
-                    {
-                        display: grid;
-                        grid-row-gap: 2rem;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: 1fr 3fr 3fr 3fr;
-                        background-color: #F2F2F2;
-                        border-radius: 1.5rem;
-                        height: 95.1%;
-                        width: 112%;
-                        margin-top: 4.4%;
-                        margin-left: -1%;
-                        
-                    }
+
                     .Popresult-1
                     {
                     
@@ -622,8 +621,7 @@ grid-row-start: 2;
 {
     grid-column-start: 1;
     grid-column-end: 8;
-    grid-row-start: 5;
-    grid-row-end: 8;
+    grid-row-start: 6;
     background-color: #F2F2F2;
     margin-left: -11%;
     margin-right: -7%;
