@@ -10,17 +10,18 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 6em 20em 40em 30em 30em 5em;
-
+    grid-template-rows: 6em 20em 40em 30em 15em 5em;
+    width: 1440px;
+    margin-left: 9%;
+    margin-right: 9%;
 }
 
                     body
                     {
                         font-family: "Raleway", "Sans serif";   
                         display: block;
-                        width: 1440px;
-                        margin-left: 9%;
-                        margin-right: 9%;
+                        
+
 
                     }
 
@@ -668,6 +669,10 @@
                     {
                         margin-left: -26%;
                         white-space: pre-line;
+                    }
+
+                    footer{
+                        background-color: #F2F2F2;
                     }
                                                 /*Media Queries*/
 
