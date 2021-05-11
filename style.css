@@ -5,26 +5,13 @@
 
     
 
-                                            /* Taille des photos*/
-
-.photoactivité1
-{
-    max-height: 200px;
-    max-width: 150px; 
-}
-.photoactivité2
-{
-    max-height: 99px;
-    max-width: 150px; 
-}
-
-
                                             /*Général*/
 .Gridmain 
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 5% 15% 30% 40% 10%;
+    grid-template-rows: 5% 15% 30% 40%;
+    grid-row-gap: 1em;
 
 }
 
@@ -38,11 +25,18 @@
 
                     }
 
-                    h2
+                    ul
                     {
-                        padding-left: 2%;
-                    }    
+                        list-style-type: none;
+                    }
 
+                .Image:hover
+                {
+                    transform:scale(1.05);
+                    transition-duration: 0.2s;
+                    cursor: pointer;
+                }
+ 
                                             /*GRID 1*/
 
 .Gridone
@@ -221,6 +215,12 @@ grid-row-start: 2;
                         border: 2px solid #d9d9d9;
                         border-radius: 2rem;
                         margin-bottom: 1rem;
+                        
+                    }
+                    .Filtre:hover
+                    {
+                        transform:scale(1.05);
+                        transition-duration: 0.2s;
                         cursor: pointer;
                     }
                     .Motsclefs
@@ -504,30 +504,45 @@ grid-row-start: 2;
                     }
 .Gridfive
 {
-grid-column-start: 1;
-grid-column-end: 8;
-grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    padding-top: 2%;
+    height: 80%;
 
 }
                     #Activity
                     {
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                        grid-template-rows: 1fr 1fr 1fr;
+                        grid-template-rows: 1fr;
+                        grid-column-gap: 2em;
+                        grid-row-gap: 1em;
                         width: 95%;
                     }
                     .ActivityDescr
                     {
                         font-weight: bold;
+                        font-size: 1.1em;
+                        padding-left: 4%;
                     }
 
                     .photoactivité1
                     {
-
+                        height: 496px;
+                        width: 318px;
+                        border-top-left-radius: 1.25em;
+                        border-top-right-radius: 1.25rem;
+                        object-fit: cover;
                     }
                     .photoactivité2
                     {
-
+                        height: 204px;
+                        width: 318px;
+                        object-fit: cover;
+                        border-top-left-radius: 1.25rem;
+                        border-top-right-radius: 1.25rem;
+                    
                     }
                     .ActivityPIC1
                     {
@@ -536,7 +551,6 @@ grid-row-start: 4;
                         grid-row-start: 1;
                         grid-row-end: 4;
                         background-color: white;
-                        padding: 0.375rem;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
                         box-sizing: border-box;
@@ -547,9 +561,8 @@ grid-row-start: 4;
                         grid-column-start: 3;
                         grid-column-end: 5;
                         grid-row-start: 1;
-                        grid-row-end: 2;
+                        grid-row-end: 1;
                         background-color: white;
-                        padding: 0.375rem;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
                         box-sizing: border-box;
@@ -562,7 +575,6 @@ grid-row-start: 4;
                         grid-row-start: 3;
                         grid-row-end: 4;
                         background-color: white;
-                        padding: 0.375rem;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
                         box-sizing: border-box;
@@ -575,7 +587,6 @@ grid-row-start: 4;
                         grid-row-start: 1;
                         grid-row-end: 4;
                         background-color: white;
-                        padding: 0.375rem;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
                         box-sizing: border-box;
@@ -589,7 +600,6 @@ grid-row-start: 4;
                         grid-row-start: 1;
                         grid-row-end: 2;
                         background-color: white;
-                        padding: 0.375rem;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
                         box-sizing: border-box;
@@ -602,7 +612,6 @@ grid-row-start: 4;
                         grid-row-start: 3;
                         grid-row-end: 4;
                         background-color: white;
-                        padding: 0.375rem;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
                         box-sizing: border-box;
@@ -611,21 +620,26 @@ grid-row-start: 4;
 
 .Gridsix
 {
-grid-column-start: 1;
-grid-column-end: 8;
-grid-row-start: 5;
-grid-row-end: 8;
-background-color: #F2F2F2;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    background-color: #F2F2F2;
+    margin-left: -11%;
+    margin-right: -7%;
+    margin-top: -7%;
+    margin-bottom: -5%;
 }
 
                     .About
                     {
                         display: flex;
                         flex-direction: row;
-                        align-content: center;
-                        justify-content: space-between;
-                        align-items: center;
-                        width: 80%;
+                        justify-content: space-around;
+                        align-items: baseline;
+                        align-content: stretch;
+                        width: 90%;
+                    }        
                     }
                     .aboutDisp
                     {
@@ -634,9 +648,27 @@ background-color: #F2F2F2;
                         flex-wrap: nowrap;
                         align-content: flex-start;
                         justify-content: flex-start;
-                        align-items: center;
+                        align-items: flex-start;
                     }
 
-
-
-                                                /*Géneral*/
+                    li:hover
+                    {
+                        cursor: pointer;
+                        transform:scale(1.05);
+                    }
+                    .List1
+                    {
+                        margin-left: -16%;
+                        white-space: pre-line;
+                    }
+                    .List2
+                    {
+                        margin-left: -20%;
+                        white-space: pre-line;
+                    }
+                    .List3
+                    {
+                        margin-left: -26%;
+                        white-space: pre-line;
+                    }
+                                                /*Media Queries*/
