@@ -676,15 +676,53 @@
                     }
                                                 /*Media Queries*/
 
+
+
+
 @media screen and (max-width: 375px)
 {
     body
     {
         font-family: "Raleway", "Sans serif";   
         display: block;
-        width: 375px;
-        margin: 0.5%;
+        width: max-content;
+        
+
 
     }
 
+
+    .Gridmain
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+
+    }
+
+
+    .Gridone
+    {
+
+    }
+
+    .Header
+    {
+
+    }
+
+    .MenuNav
+    {
+   
+    }
+
+    .Main
+    {
+
+    }
+
+    .Sub
+    {
+
+    }
 }
