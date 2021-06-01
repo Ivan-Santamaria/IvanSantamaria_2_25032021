@@ -16,9 +16,9 @@
 
                     body
                     {
-                        font-family: "Raleway", "Sans serif";   
                         display: block;
-                        width: 1440px;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 6em 20em 40em 30em 15em 5em;
                         margin-left: 9%;
                         margin-right: 9%;
 
@@ -267,14 +267,14 @@
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr;
                         grid-template-rows: 1fr 2fr 3fr;
-                        grid-column-gap: 0rem;
-                        grid-row-gap: 2rem;
                         width: 83%;
                         height: 82%;
-                        background-color: #F2F2F2;
-                        border-radius: 1.5rem;
+                        background-color: rgb(242, 242, 242);
                         padding-left: 1.5rem;
                         padding-bottom: 6.35rem;
+                        grid-column-gap: 0rem;
+                        grid-row-gap: 2rem;
+                        border-radius: 1.5rem;
 
                     }      
                     .HouseTitle
@@ -411,8 +411,8 @@
     grid-column-start: 5;
     grid-column-end: 8;
     grid-row-start: 3;
-    margin-left: 13%;
-    padding-right: 19%;
+    margin-left: 24%;
+    padding-right: 6%;
     margin-top: -8%;
 
 }
@@ -507,17 +507,15 @@
     grid-column-end: 8;
     grid-row-start: 4;
     padding-top: 2%;
-    height: 80%;
 
 }
                     #Activity
                     {
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                        grid-template-rows: 1fr;
                         grid-column-gap: 2em;
                         grid-row-gap: 1em;
-                        width: 95%;
+                        width: 100%;
                     }
                     .ActivityDescr
                     {
@@ -529,7 +527,7 @@
                     .photoactivité1
                     {
                         height: 496px;
-                        width: 318px;
+                        width: 317px;
                         border-top-left-radius: 1.25em;
                         border-top-right-radius: 1.25rem;
                         object-fit: cover;
@@ -537,7 +535,7 @@
                     .photoactivité2
                     {
                         height: 204px;
-                        width: 318px;
+                        width: 317px;
                         object-fit: cover;
                         border-top-left-radius: 1.25rem;
                         border-top-right-radius: 1.25rem;
@@ -554,6 +552,7 @@
                         box-shadow: 0 0 16px #0000002e;
                         box-sizing: border-box;
                         height: 100%;
+                        width: 100%;
                     }
                     .ActivityPIC2
                     {
