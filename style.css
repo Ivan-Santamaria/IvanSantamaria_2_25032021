@@ -51,6 +51,8 @@
                     {
                         float: left;
                         margin-top:1% ;
+                        width: 97px; 
+                        height:45px
                     }
 
 
@@ -818,5 +820,5 @@
     }
 
 
-    
+
 }
