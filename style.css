@@ -5,15 +5,17 @@
 
     
 
-                                            /*Général*/
+
+                                          /*Général*/
+
 
 .Gridmain 
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 6em 20em 40em 30em 15em 5em;
-    margin-left: 9%;
-    margin-right: 9%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
                     body
@@ -59,9 +61,8 @@
                         display: flex;
                         flex-direction: row;
                         justify-content: center;
-                        padding-left: 55%;
-                        margin-left: 11%;
-                        margin-top: -1.9%;
+                        padding-left: 60%;
+                        margin-top: -2%;
                         font-weight: 500;
                         flex-wrap: nowrap;
                         align-items: baseline;
@@ -186,6 +187,7 @@
                         flex-direction: row;
                         justify-content: space-between;
                         width: 70%;
+                        align-items: baseline;
                         
                     }
                     
@@ -241,7 +243,7 @@
                     .TextInfo
                     {
                         display: flex;
-                        width: 33%;
+                        width: 34%;
                         justify-content: space-between;
                         align-items: center;
                     
@@ -419,7 +421,8 @@
     background-color: #F2F2F2;
     border-radius: 1.5rem;
     height: 97%;
-    width: 100%;
+    width: 105%;
+    margin-left: -5%;
              }
                     .ICNtend
                     {
@@ -489,7 +492,7 @@
                         object-fit: cover;
                     }
                         
-                    }
+                
                     .descrpop
                     {
                         text-align: center;
@@ -499,6 +502,7 @@
     grid-column-start: 1;
     grid-column-end: 8;
     grid-row-start: 4;
+    grid-row-end: 6;
 
 }
                     #Activity
@@ -520,7 +524,7 @@
                     .photoactivité1
                     {
                         height: 496px;
-                        width: 317px;
+                        width: 309px;
                         border-top-left-radius: 1.25em;
                         border-top-right-radius: 1.25rem;
                         object-fit: cover;
@@ -528,10 +532,10 @@
                     .photoactivité2
                     {
                         height: 204px;
-                        width: 317px;
-                        object-fit: cover;
+                        width: 309px;
                         border-top-left-radius: 1.25rem;
                         border-top-right-radius: 1.25rem;
+                        object-fit: cover;
                     
                     }
                     .ActivityPIC1
@@ -615,10 +619,6 @@
     grid-row-start: 7;
     grid-row-end: auto;
     background-color: #F2F2F2;
-    margin-left: -11%;
-    margin-right: -7%;
-    margin-top: -7%;
-    margin-bottom: -5%;
 }
 
                     footer
@@ -635,7 +635,7 @@
                         align-content: stretch;
                         width: 90%;
                     }        
-                    }
+                    
                     .aboutDisp
                     {
                         display: flex;
@@ -670,90 +670,98 @@
                     footer{
                         background-color: #F2F2F2;
                     }
-                
-
-
-
-
-
-
+             
 
 
 
 
                                                 /*Media Queries*/
 
+@media screen and (max-width: 1680px)
+{
+    .Gridmain {
 
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    
+    #Menu {
+        padding-left: 60%;
+        margin-top: -1.8%;
+    }
+
+    #FlexFiltres {
+        width: 65%;
+    }
+
+    .TextInfo {
+        width: 33%;
+    }
+    #Résultats {
+        width: 90%;
+    }
+    #Populaire {
+        width: 110%;
+        margin-left: -10%;
+    }
+    .photoactivité1 {
+        width: 317px;
+
+    }
+
+.photoactivité2 {
+    width: 317px;
+
+}
+}
 
 
 @media screen and (max-width: 1440px)
 {
+
     .Gridmain {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 6em 20em 40em 30em 15em 5em;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
+#Menu 
+{
+    margin-top: -2.1%;
+}
 
-    #Menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-left: 55%;
-        margin-left: 18%;
-        margin-right: 0%;
-        margin-top: -2.2%;
-        font-weight: 500;
-        flex-wrap: nowrap;
-        align-items: baseline;
-    }
+#FlexFiltres 
+{
+    width: 70%;
+}
 
-    #FlexFiltres {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 70%;
-    }
+.TextInfo 
+{
+    width: 35%;
+}
+#Résultats {
+    width: 85%;
+    padding-right: 3.5rem;
+    grid-column-gap: 1rem;
+}
+#Populaire {
+    width: 107%;
+    margin-left: -5%;
+}
+#Activity {
+    width: 101%;
+}
+.photoactivité1 
+{
+    width: 300px;
+}
+.photoactivité2
+{
+    width: 300px;
+}
+}
 
-    .TextInfo {
-        display: flex;
-        width: 35%;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #Résultats {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 2fr 3fr;
-        grid-column-gap: 0rem;
-        grid-row-gap: 2rem;
-        width: 90%;
-        height: 80%;
-        background-color: #F2F2F2;
-        border-radius: 1.5rem;
-        padding-left: 1.5rem;
-        padding-bottom: 6.35rem;
-    }
+@media screen and (max-width: 1280px)
+{
 
 
-    
-    .Gridfour {
-        grid-column-start: 5;
-        grid-column-end: 8;
-        grid-row-start: 3;
-        margin-left: 25%;
 
-    }
-    #Populaire {
-        display: grid;
-        grid-row-gap: 2rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 3fr 3fr 3fr;
-        background-color: #F2F2F2;
-        border-radius: 1.5rem;
-        height: 96.1%;
-        width: 75%;
-    }
 }
