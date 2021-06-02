@@ -6,6 +6,7 @@
     
 
                                             /*Général*/
+
 .Gridmain 
 {
     display: grid;
@@ -19,9 +20,6 @@
                     {
                         font-family: "Raleway", "Sans serif";   
                         display: block;
-                        
-
-
                     }
 
                     ul
@@ -63,7 +61,6 @@
                         justify-content: center;
                         padding-left: 55%;
                         margin-left: 11%;
-                        margin-right: 2%;
                         margin-top: -1.9%;
                         font-weight: 500;
                         flex-wrap: nowrap;
@@ -188,7 +185,7 @@
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
-                        width: 65%;
+                        width: 70%;
                         
                     }
                     
@@ -244,17 +241,16 @@
                     .TextInfo
                     {
                         display: flex;
-                        width: 31%;
+                        width: 33%;
                         justify-content: space-between;
                         align-items: center;
                     
                     }
-.Gridthree
-{
+.Gridthree {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 3;
-    margin-top: -3%;
+    grid-row-end: 4;
 }
 /* Zone Hébergement*/
                     .Bulle
@@ -269,14 +265,13 @@
                         grid-template-rows: 1fr 2fr 3fr;
                         grid-column-gap: 0rem;
                         grid-row-gap: 2rem;
-                        width: 83%;
-                        height: 82%;
+                        height: 81%;
                         background-color: #F2F2F2;
                         border-radius: 1.5rem;
-                        padding-left: 1.5rem;
+                        padding-left: 2.5rem;
                         padding-bottom: 6.35rem;
-
-                    }      
+                        width: 90%;
+                    }    
                     .HouseTitle
                     {
                         grid-column-start: 1;
@@ -406,36 +401,29 @@
                     {
                         color: #565656;   
                     }
-.Gridfour
-{
-    grid-column-start: 5;
+.Gridfour {
+    grid-column-start: 6;
     grid-column-end: 8;
     grid-row-start: 3;
-    margin-left: 13%;
-    padding-right: 19%;
-    margin-top: -8%;
-
+    grid-row-end: 4;
+    width: 100%;
 }
 
 /* Catégorie populaire*/
 
-                    #Populaire
-                    {
-                        display: grid;
-                        grid-row-gap: 2rem;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: 1fr 3fr 3fr 3fr;
-                        background-color: #F2F2F2;
-                        border-radius: 1.5rem;
-                        height: 94.5%;
-                        width: 112%;
-                        margin-top: 4.4%;
-                        margin-left: -1%;
-                        
-                    }
+#Populaire {
+    display: grid;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr 3fr 3fr;
+    background-color: #F2F2F2;
+    border-radius: 1.5rem;
+    height: 97%;
+    width: 100%;
+             }
                     .ICNtend
                     {
-                    margin: 18%;
+                        padding-left: 23%;
 
                     }
                     .Titlepop
@@ -468,6 +456,8 @@
                         background-color: white;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
+                        width: 90%;
+                        margin-left: 5%;
                     }
                     .Popresult-2
                     {
@@ -475,13 +465,16 @@
                         background-color: white;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
+                        width: 90%;
+                        margin-left: 5%;
                     }
                     .Popresult-3
                     {
-                        grid-row: ;
                         background-color: white;
                         border-radius: 1.25rem;
                         box-shadow: 0 0 16px #0000002e;
+                        width: 90%;
+                        margin-left: 5%;
                     }
                     .photohepopulaire
                     {
@@ -506,18 +499,16 @@
     grid-column-start: 1;
     grid-column-end: 8;
     grid-row-start: 4;
-    padding-top: 2%;
-    height: 80%;
 
 }
                     #Activity
                     {
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                        grid-template-rows: 1fr;
+                        grid-template-rows: 2fr;
                         grid-column-gap: 2em;
                         grid-row-gap: 1em;
-                        width: 95%;
+                        width: 100%;
                     }
                     .ActivityDescr
                     {
@@ -529,7 +520,7 @@
                     .photoactivité1
                     {
                         height: 496px;
-                        width: 318px;
+                        width: 317px;
                         border-top-left-radius: 1.25em;
                         border-top-right-radius: 1.25rem;
                         object-fit: cover;
@@ -537,7 +528,7 @@
                     .photoactivité2
                     {
                         height: 204px;
-                        width: 318px;
+                        width: 317px;
                         object-fit: cover;
                         border-top-left-radius: 1.25rem;
                         border-top-right-radius: 1.25rem;
@@ -621,13 +612,19 @@
 {
     grid-column-start: 1;
     grid-column-end: 8;
-    grid-row-start: 6;
+    grid-row-start: 7;
+    grid-row-end: auto;
     background-color: #F2F2F2;
     margin-left: -11%;
     margin-right: -7%;
     margin-top: -7%;
     margin-bottom: -5%;
 }
+
+                    footer
+                    {
+                        
+                    }
 
                     .About
                     {
@@ -673,50 +670,90 @@
                     footer{
                         background-color: #F2F2F2;
                     }
+                
+
+
+
+
+
+
+
+
+
+
                                                 /*Media Queries*/
 
 
 
 
-@media screen and (max-width: 375px)
+@media screen and (max-width: 1440px)
 {
-    body
-    {
-        font-family: "Raleway", "Sans serif";   
-        display: block;
-    }
-
-
-    .Gridmain
-    {
+    .Gridmain {
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 6em 20em 40em 30em 15em 5em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
+    #Menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-left: 55%;
+        margin-left: 18%;
+        margin-right: 0%;
+        margin-top: -2.2%;
+        font-weight: 500;
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
 
+    #FlexFiltres {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    .TextInfo {
+        display: flex;
+        width: 35%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #Résultats {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 3fr;
+        grid-column-gap: 0rem;
+        grid-row-gap: 2rem;
+        width: 90%;
+        height: 80%;
+        background-color: #F2F2F2;
+        border-radius: 1.5rem;
+        padding-left: 1.5rem;
+        padding-bottom: 6.35rem;
     }
 
 
-    .Gridone
-    {
+    
+    .Gridfour {
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 3;
+        margin-left: 25%;
 
     }
-
-    .Header
-    {
-
-    }
-
-    .MenuNav
-    {
-   
-    }
-
-    .Main
-    {
-
-    }
-
-    .Sub
-    {
-
+    #Populaire {
+        display: grid;
+        grid-row-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 3fr 3fr 3fr;
+        background-color: #F2F2F2;
+        border-radius: 1.5rem;
+        height: 96.1%;
+        width: 75%;
     }
 }
