@@ -540,6 +540,7 @@
                     }
                     .ActivityPIC1
                     {
+                        
                         grid-column-start: 1;
                         grid-column-end: 3;
                         grid-row-start: 1;
@@ -675,7 +676,7 @@
 
 
 
-                                                /*Media Queries*/
+                                                /*Media Queries Desktop*/
 
 @media screen and (max-width: 1680px)
 {
@@ -761,7 +762,61 @@
 
 @media screen and (max-width: 1280px)
 {
+    .Gridmain {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    #Menu {
+        margin-top: -2.3%;
+        padding-left: 64%;
+    }
+
+    #FlexFiltres {
+        width: 72%;
+    }
+    .TextInfo {
+        width: 38%;
+    }
+    #Résultats {
+        width: 83%;
+        padding-right: 3.5rem;
+        height: 78%;
+    }
+    .Bulle {
+        height: 190px;
+        width: 228px;
+    }
+    #Populaire {
+        width: 110%;
+        margin-left: -10%;
+        height: 94%;
+    }
+    #Activity {
+        width: 100%;
+    }
+    .photoactivité1 {
+        width: 273px;
+    }
+    .photoactivité2 {
+        width: 273px;
+    }
+}
 
 
 
+
+
+                                                /*Media Queries Mobile*/
+
+                                                @media screen and (max-width: 1024px)
+{
+    .Gridmain
+    {
+        display: block;
+        margin: unset;
+    }
+
+
+    
 }
