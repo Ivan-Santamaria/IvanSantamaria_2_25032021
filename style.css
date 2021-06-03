@@ -58,64 +58,99 @@
 
 /*Menu*/
 
-                    #Menu
+               #Menu
+                {
+                    font-weight: 600;
+      
+                }
+                    .Main
                     {
+          
                         display: flex;
                         flex-direction: row;
-                        justify-content: center;
-                        padding-left: 60%;
-                        margin-top: -2%;
-                        font-weight: 500;
-                        flex-wrap: nowrap;
+                        flex-wrap: wrap;
                         align-items: baseline;
+                        justify-content: space-evenly;
+                        padding-left: 59%;
+                        padding-right: 10%;
+                        margin-top: -1.9%;
+                        align-content: stretch;    
+
                     }
-                    .MenuNavLink
+                    
+                    .HostingNav
                     {
-                        text-decoration:none;
-                        text-align: center;
-                        color: #0065fc;
-                        padding: 1%;
-                        padding-top: 2em;
-                        width: 100%;
+                        color: #0065FC;
+                        border-top: 3px solid #0065FC;
+                        padding: 5%;
+                        margin-top: -0.4%;
+                        text-decoration: none;
                     }
-                    .MenuNavLink:active
+                    .HostingNav:hover
+    
                     {
-                        color: #DEEBFF;
-                    }
-                    .MenuNavLink:hover
-                    {
-                        border-top: 3px #0065fc solid;
-                    }
-                    .MenuNavLink:nth-child(1)
-                    {
-                        border-top:3px #0065fc solid;
-                        order: 1;
-                    }
-                    .MenuNavLink:nth-child(2)
-                    {
-                        order: 2;
                         color: black;
+                        border-top: 3px solid #0065FC;
+                        padding: 5%;
+                        transform: none;
+                        transition-duration: unset;
+                        cursor: pointer;
                     }
-                    .MenuNavLink:nth-child(2):hover
+                    
+    
+                    .ActivityNav
                     {
-                        color: #0065fc;
-                    }
-                    .MenuNavLink:nth-child(2):active
-                    {
-                        color: #DEEBFF; 
-                    }
-                    .MenuNavLink:nth-child(3)
-                    {
-                        order: 3;
-                    }
-                    .MenuNavLink:nth-child(3):hover
-                    {
-                        color: #DEEBFF;
-                        border-top: none;
-                    }
+                        padding: 5%;
+                        color: black;
+                        text-decoration: none;
 
+                    }
+                    .ActivityNav:hover
+                    {
+                         
+                        color: #0065FC;
+                        border-top: 3px solid #0065FC;
+                        padding: 5%;
+                        transform: none;
+                        transition-duration: unset;
+                        cursor: pointer;       
 
+                    }
+                    .Sub
+                    {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        align-content: flex-end;
+                        justify-content: center;
+                        float: right;
+                        margin-right: 2%;
+                        margin-top: -2.75%;
 
+                    }
+              
+                .Sublink
+                {
+                    padding: 5%;
+                    text-decoration: none;
+                }    
+                .Sublink:hover
+                {              
+                   
+                    color: #dfecff;
+                    padding: 5%;
+                    transform: none;
+                    transition-duration: unset;
+                    cursor: pointer;
+                }
+                .Sublink:visited
+                {              
+                    color: #0065FC;
+     
+
+                }
+                    
                                             /*Grid 2*/
 
 
@@ -624,11 +659,6 @@
     background-color: #F2F2F2;
 }
 
-                    footer
-                    {
-                        
-                    }
-
                     .About
                     {
                         display: flex;
@@ -686,6 +716,15 @@
 
         margin-left: 9%;
         margin-right: 9%;
+    }
+    .Main {
+        justify-content: space-evenly;
+        padding-right: 24%;
+
+    }
+    .Sub {
+        margin-right: 7%;
+        margin-top: -7%;
     }
     
     #Menu {
@@ -803,6 +842,7 @@
     .photoactivité2 {
         width: 273px;
     }
+    
 }
 
 
@@ -810,15 +850,12 @@
 
 
                                                 /*Media Queries Mobile*/
-
-                                                @media screen and (max-width: 1024px)
+@media screen and (max-width: 375px)
+                                            
 {
     .Gridmain
     {
         display: block;
-        margin: unset;
     }
-
-
 
 }
