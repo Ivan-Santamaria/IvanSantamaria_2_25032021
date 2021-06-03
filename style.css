@@ -699,18 +699,19 @@ background-color: #F2F2F2;
         margin-right: 9%;
     }
     .Main {
-        justify-content: space-evenly;
-        padding-right: 24%;
+        padding-left: 17%;
+        padding-right: 20%;
+        margin-top: 0%;
 
     }
     .Sub {
-        margin-right: 7%;
+        margin-right: 5%;
         margin-top: -7%;
     }
     
     #Menu {
         padding-left: 60%;
-        margin-top: -1.8%;
+        margin-top: -1.9%;
     }
 
     #FlexFiltres {
@@ -721,21 +722,29 @@ background-color: #F2F2F2;
         width: 33%;
     }
     #Résultats {
-        width: 90%;
+        width: 109%;
     }
     #Populaire {
-        width: 110%;
-        margin-left: -10%;
+        width: 115%;
+        margin-left: -15%;
+    }
+    
+
+    .NotePop {
+        margin-top: 13.5%;
+    }
+    .NotePop2 {
+        margin-top: 8.5%;
     }
     .photoactivité1 {
         width: 317px;
 
     }
-
 .photoactivité2 {
     width: 317px;
-
 }
+
+
 }
 
 
@@ -761,13 +770,14 @@ background-color: #F2F2F2;
     width: 35%;
 }
 #Résultats {
-    width: 85%;
+    width: 104%;
     padding-right: 3.5rem;
+    padding-left: 1rem;
     grid-column-gap: 1rem;
 }
 #Populaire {
-    width: 107%;
-    margin-left: -5%;
+    width: 113%;
+    margin-left: -13%;
 }
 #Activity {
     width: 101%;
@@ -785,10 +795,16 @@ background-color: #F2F2F2;
 @media screen and (max-width: 1280px)
 {
     .Gridmain {
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
-
+    .Main {
+        margin-top: 0.5%;
+    }
+    .Sub {
+        margin-right: 2%;
+        margin-top: -7.8%;
+    }
     #Menu {
         margin-top: -2.3%;
         padding-left: 64%;
@@ -801,27 +817,26 @@ background-color: #F2F2F2;
         width: 38%;
     }
     #Résultats {
-        width: 83%;
-        padding-right: 3.5rem;
-        height: 78%;
+        width: 100%;
+        padding-left: 2rem ;
     }
     .Bulle {
         height: 190px;
         width: 228px;
     }
     #Populaire {
-        width: 110%;
-        margin-left: -10%;
-        height: 94%;
+        width: 115%;
+        margin-left: -15%;
+        height: 97%;
     }
     #Activity {
         width: 100%;
     }
     .photoactivité1 {
-        width: 273px;
+        width: 279px;
     }
     .photoactivité2 {
-        width: 273px;
+        width: 279px;
     }
     
 }
