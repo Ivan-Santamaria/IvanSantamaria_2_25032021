@@ -1006,19 +1006,18 @@ background-color: #F2F2F2;
         grid-area: 8/ 1 / 10/ 3;
     }
 
-    #Résultats
-    {
+    #Résultats {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
         grid-column-gap: 0rem;
         grid-row-gap: 1rem;
         height: 81%;
-        background-color: #F2F2F2;
         border-radius: 1.5rem;
-        padding-left: 3.5rem;
-        padding-bottom: 6.35rem;
+        padding-left: 0rem;
+        padding-bottom: 0rem;
         width: 100%;
+        padding-right: 0rem;
     }
 
     .Result-col1-row2 {
@@ -1047,6 +1046,10 @@ background-color: #F2F2F2;
     .Result-col3-row3 {
         grid-column-start: 1;
         grid-row-start: 7;
+    }
+    .More
+    {
+        grid-row-start: 9;
     }
 
     .Gridfive {
