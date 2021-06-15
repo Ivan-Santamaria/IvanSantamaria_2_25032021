@@ -859,7 +859,7 @@ background-color: #F2F2F2;
 
 
                                                 /*Media Queries Mobile*/
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 375px)
                                             
 {
                                                 /* Responsive Grid */
@@ -1146,15 +1146,11 @@ display: none;
                 .photoactivite1 {
                     height: 10em;
                     width: 100%;
-                    border-top-left-radius: 1.25em;
-                    border-top-right-radius: 1.25rem;
                     object-fit: cover;
                 }
                 .photoactivite2 {
                     height: 10em;
                     width: 100%;
-                    border-top-left-radius: 1.25em;
-                    border-top-right-radius: 1.25rem;
                     object-fit: cover;
                 }
 
