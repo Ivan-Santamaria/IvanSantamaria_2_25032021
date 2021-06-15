@@ -55,8 +55,8 @@
                         float: left;
                         height: 100%;
                         width: 8em;
-    padding-left: 9%;
-    padding-top: 1%;
+                        padding-left: 9%;
+                        padding-top: 1%;
                     }
 
 
@@ -287,7 +287,6 @@
                     .LogoInfo
                     {
                         color: #0065fc;
-                        background-color: ;
                         border: 1px #d9d9d9 solid;
                         border-radius: 50%;
                         height: 1.75rem;
@@ -315,7 +314,7 @@
                     {
                         height: 13em;
                     }
-                    #Résultats
+                    #Resultats
                     {
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr;
@@ -543,7 +542,7 @@ grid-area: 2 / 5 / 3 / 8;
                         border-top-left-radius: 1.5em;
                         border-bottom-left-radius: 1.5em;
                         box-sizing: border-box;
-                        width: 33%;
+                        width: 8.2rem;
                         height: inherit;
                         object-fit: cover;
                     }
@@ -575,22 +574,23 @@ grid-area: 2 / 5 / 3 / 8;
                         padding-left: 4%;
                     }
 
-                    .photoactivité1
+                    .photoactivite1
                     {
+                        object-fit: cover;
                         height: 496px;
                         width: 100%;
                         border-top-left-radius: 1.25em;
                         border-top-right-radius: 1.25rem;
-                        object-fit: cover;
+
                     }
-                    .photoactivité2
+                    .photoactivite2
                     {
+                        object-fit: cover;
                         height: 204px;
                         width: 100%;
                         border-top-left-radius: 1.25rem;
                         border-top-right-radius: 1.25rem;
-                        object-fit: cover;
-                    
+
                     }
                     .ActivityPIC1
                     {
@@ -859,7 +859,7 @@ background-color: #F2F2F2;
 
 
                                                 /*Media Queries Mobile*/
-@media screen and (max-width: 600px)
+@media screen and (max-width: 1000px)
                                             
 {
                                                 /* Responsive Grid */
@@ -880,17 +880,14 @@ background-color: #F2F2F2;
                                                     /* Responsive Grid */
 
     #Header {
-        display: flex;
+
         flex-direction: column;
-        flex-wrap: nowrap;
         align-content: baseline;
         justify-content: center;
         align-items: initial;
     }
 
     .logoreservia {
-        float: left;
-        height: 100%;
         width: 6em;
         padding-left: 8%;
         padding-top: 4%;
@@ -906,9 +903,7 @@ background-color: #F2F2F2;
         padding-right: 4%;
     }
     .MainMenu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+
         align-items: flex-start;
         justify-content: flex-start;
         margin-top: 45.5%;
@@ -988,8 +983,8 @@ background-color: #F2F2F2;
         border: none;
         border-radius: 0 1rem 1rem 0;
         cursor: pointer;
-        padding-top: 1.155rem;
-        padding-bottom: 1.15rem;
+        padding-top: 1.3rem;
+        padding-bottom: 1.2rem;
         padding-right: 1.2rem;
         padding-left: 1.2rem;
     }
@@ -1057,7 +1052,7 @@ display: none;
         margin-top: 10%;
     }
                                         /* Hosting Grid Responsive */
-                                        #Résultats {
+                                        #Resultats {
                                             grid-template-columns: 1fr 1fr;
                                             grid-template-rows: max-content;
                                             grid-row-gap: 1.5rem;
@@ -1148,14 +1143,14 @@ display: none;
                 /* Tourism Grid Responsive */
                 
                 
-                .photoactivité1 {
+                .photoactivite1 {
                     height: 10em;
                     width: 100%;
                     border-top-left-radius: 1.25em;
                     border-top-right-radius: 1.25rem;
                     object-fit: cover;
                 }
-                .photoactivité2 {
+                .photoactivite2 {
                     height: 10em;
                     width: 100%;
                     border-top-left-radius: 1.25em;
