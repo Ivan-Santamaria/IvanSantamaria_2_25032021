@@ -117,23 +117,23 @@ cursor: pointer;
 }
 
 .Sublink {
+    color: #0065FC;
     padding: 5%;
     padding-top: 4.6%;
     text-decoration: none;
 }
 
 
+
+.Sublink:hover
+{       
+cursor: pointer;
+transform: scale(1.10);
+}
 .Sublink:visited
 {              
     color: #0065FC;
 }
-.Sublink:hover
-{              
-cursor: pointer;
-transform: scale(1.10);
-
-}
-
 /*Grid 2*/
 
 
