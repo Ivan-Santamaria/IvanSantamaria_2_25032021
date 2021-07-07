@@ -22,7 +22,7 @@ margin-right: 10%;
 
 body
 {
-
+margin: 0%;
 font-family: "Raleway", "Sans serif";   
 
 }
@@ -52,7 +52,6 @@ cursor: pointer;
 display: grid;
 grid-template-columns: 56% 34% 10%;
 grid-template-rows: 1fr;
-margin-top: -0.6%;
 }
 .logoreservia {
 grid-area: 1 / 1 / 2 / 2;
@@ -66,44 +65,40 @@ padding-top: 2%;
 font-weight: 600;
 }
 .MainMenu {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-align-items: baseline;
-align-content: center;
-justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 16%;
 }
 .MenuNav {
 grid-area: 1 / 2 / 2 /3;
 }
 
 .HostingNav {
-color: #0065FC;
-border-top: 6px solid #0065FC;
-padding: 5%;
-text-decoration: none;
+    border-top: 3px solid transparent;
+    color: black;
+    padding: 5%;
+    text-decoration: none;
 }
-.HostingNav:hover
-
-{
-border-top: 6px solid #0065FC;
-color: black;
-cursor: pointer;
+.HostingNav:hover {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    cursor: pointer;
 }
 
 
 .ActivityNav {
+    color: black;
+border-top: 3px solid transparent;
 padding: 5%;
 text-decoration: none;
 }
-.ActivityNav:visited
-{
-color: #0065FC;
-}
+
 .ActivityNav:hover
 {
-color: black;
-border-top: 6px solid #0065FC;
+color: #0065FC;
+border-top: 3px solid #0065FC;
 
 cursor: pointer;   
 }
@@ -111,33 +106,33 @@ cursor: pointer;
 
 
 .Sub {
-color: #0065FC;
-font-weight: 600;
-grid-area: 1 / 2 /2 /2;
-padding-left: 0%;
-margin-top: 6%;
-margin-left: 78%;
+    font-weight: 600;
+    grid-area: 1 / 2 /2 /2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: flex-end;
 }
 
 .Sublink {
-padding: 5%;
-margin-right: 2%;
-margin-top: -2.75%;
-text-decoration: none;
+    padding: 5%;
+    padding-top: 4.6%;
+    text-decoration: none;
 }
 
 
-
-.Sublink:hover
-{              
-color: black;
-cursor: pointer;
-}
 .Sublink:visited
 {              
-color: #0065FC;
+    color: #0065FC;
 }
+.Sublink:hover
+{              
+cursor: pointer;
+transform: scale(1.10);
 
+}
 
 /*Grid 2*/
 
@@ -438,16 +433,15 @@ grid-area: 2 / 5 / 3 / 8;
 }
 
 #Populaire {
-display: grid;
-grid-row-gap: 1.5rem;
-grid-template-columns: 1fr;
-grid-template-rows: auto;
-background-color: #F2F2F2;
-border: #F2F2F2 1px solid;
-border-radius: 1.5rem;
-padding-bottom: 3.1rem;
-margin-left: 20%;
-margin-top: -3%;
+    display: grid;
+    grid-row-gap: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: #F2F2F2;
+    border: #F2F2F2 1px solid;
+    border-radius: 1.5rem;
+    padding-bottom: 3.1rem;
+    margin-left: 20%;
 }
 .ICNtend
 {
@@ -698,10 +692,12 @@ white-space: pre-line;
 
             @media screen and (max-width: 1680px)
             {
-            .Sub{
-            margin-left: 79%;
-            }
-
+                .Sub {
+                    padding-top: 0.5%;
+                }
+                .MainMenu {
+                    margin-left: 10%;
+                }
             .NotePop {
             margin-top: 14%;
             }
@@ -715,19 +711,20 @@ white-space: pre-line;
             .H2pop {
             padding-top: 2.2%;
             }
-            #Populaire {
-            margin-top: -3.4%;
-            }
             }
             @media screen and (max-width: 1536px)
             {
+                #Header {
+                    grid-template-columns: 56% 38% 6%;
+                }
+                .MainMenu {
+                margin-left: 1%;
+                }
             .Lieu {
             font-weight: 600;
             font-size: 1.2rem;
             }
-            }
-            @media screen and (max-width: 1536px)
-            {
+
             .logoreservia {
             padding-left: 7%;
             }
@@ -749,16 +746,9 @@ white-space: pre-line;
             }
             }
             @media screen and (max-width: 1440px)
-            {
-            #Header {
-            grid-template-columns: 57% 34% 10%;
-            }
-            .Sub 
-            {
-            margin-left: 84%;
-            margin-top: 5.5%;
-            }
-            }
+ {
+
+ }
             @media screen and (max-width: 1345px)
             {    
             .Lieu {
@@ -768,32 +758,29 @@ white-space: pre-line;
             }
             @media screen and (max-width: 1280px)
             {
+                #Header {
+                    grid-template-columns: 56% 40% 4%;
+                }
             .Lieu {
             font-weight: 500;
             font-size: 1.1rem;
             }
 
             } 
-            @media screen and (max-width: 1080px)
-            {
-
-            .Lieu {
-            font-weight: 700;
-            font-size: 1.2rem;
-            }
-            }
 
 
                         /*Media Queries Mobile*/
-                        @media screen and (max-width : 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)
+                      @media screen and (max-width: 1080px)
                         {
 
 
-                        #Searching {
-                        grid-area: 1 / 1 / 2 / 3;
-                        padding-left: 5%;
-                        padding-right: 5%;
-                        }
+                            #Searching {
+                                grid-area: 1 / 1 / 2 / 3;
+                                padding-left: 5%;
+                                padding-right: 5%;
+                                margin-left: 5rem;
+                                margin-right: 5rem;
+                            }
 
                         #Popular {
                         grid-area: 2 / 1 / 3 / 3;
@@ -803,9 +790,11 @@ white-space: pre-line;
                         grid-area: 3/ 1 / 4 / 3;
                         }
 
-                        /* Responsive Grid */
+                    
 
                         #Header {
+                                margin-left: 5rem;
+    margin-right: 5rem; 
                             display: grid;
                             grid-template-columns: 50% 50%;
                             grid-template-rows: 1fr 2fr;
@@ -832,45 +821,44 @@ white-space: pre-line;
                         margin-top: 15%;
                         padding: 0%;
                         }
-
+                        #Hosting {
+                            grid-area: 3/ 1 / 4 / 3;
+                            margin-left: 5rem;
+                            margin-right: 5rem;
+                        }
                         .HostingNav {
-                        color: #0065FC;
-                        border-top: none;
-                        border-bottom: 3px solid #0065FC;
-                        padding-top: 0%;
-                        text-decoration: none;
-                        padding-bottom: 13%;
-                        padding-left: 16%;
-                        padding-right: 18%;
+                            border-top: none;
+                            border-bottom: 3px solid #0065FC;
+                            padding-top: 1%;
+                            text-decoration: none;
+                            padding-bottom: 13%;
+                            padding-left: 16%;
+                            padding-right: 18%;
                         }
                         .HostingNav:hover {
-
-                        color: black;
-                        border-bottom: 3px solid #0065FC;
-                        border-top: none;
-                        padding-top: 0%;
-                        padding-bottom: 13%;
-                        padding-left: 16%;
-                        padding-right: 18%;
+                            border-bottom: 3px solid #0065FC;
+                            border-top: none;
+                            padding-top: 1%;
+                            padding-bottom: 13%;
+                            padding-left: 16%;
+                            padding-right: 18%;
                         }
 
                         .ActivityNav {
-                        border-bottom: 3px solid #f2f2f2;
-                        color: black;
-                        text-decoration: none;
-                        padding-left: 20%;
-                        padding-right: 19.9%;
-                        padding-bottom: 13%;
-                        padding-top: 0%;
+                            border-bottom: 3px solid #f2f2f2;
+                            text-decoration: none;
+                            padding-left: 20%;
+                            padding-right: 19.9%;
+                            padding-bottom: 13%;
+                            padding-top: 0%;
                         }
                         .ActivityNav:hover {
-                        color: black;
-                        padding-left: 20%;
-                        padding-right: 19.9%;
-                        padding-bottom: 13%;
-                        padding-top: 0%;
-                        border-bottom: 3px solid #0065FC;
-                        border-top: none;
+                            padding-left: 20%;
+                            padding-right: 19.9%;
+                            padding-bottom: 13%;
+                            padding-top: 1%;
+                            border-bottom: 3px solid #0065FC;
+                            border-top: none;
                         }
 
                         .Sub {
@@ -879,16 +867,14 @@ white-space: pre-line;
                         margin-top: 9%;
                         }
                         .Sublink {
-                        float: right;
+                       
                         padding: 5%;
                         margin-right: 2%;
                         text-decoration: none;
                         font-weight: 600;
+              
                         }
-                        .Sublink:hover {
-                        color: black;
-                        cursor: pointer;
-                        }
+                     
                         .SecondSearchButton {
                         display: flex;
                         background-color: #0065FC;
@@ -968,7 +954,11 @@ white-space: pre-line;
                             margin-bottom: 10%;
                             padding-top: 5%;
                         }
-
+                        #Popular {
+                            grid-area: 2 / 1 / 3 / 3;
+                            margin-left: 5rem;
+                            margin-right: 5rem;
+                        }
                         .H2pop {
                         margin: -3%;
                         padding-left: 21%;
@@ -1035,14 +1025,15 @@ white-space: pre-line;
                         padding-left: 5%;
                         }
 
-
                         #Activity {
                             display: grid;
                             grid-template-columns: 50% 50%;
                             grid-template-rows: max-content;
                             grid-column-gap: 1em;
                             grid-row-gap: 1em;
-                            width: 100%;
+                            /* width: 84%; */
+                            margin-left: 2rem;
+                            margin-right: 2rem;
                         }
                         .ActivityDescr {
                         font-weight: bold;
@@ -1121,6 +1112,63 @@ white-space: pre-line;
                       
 
                         }
+                        @media screen and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape)
+                        {
+                            #Header {
+                                margin-left: 0rem;
+                                margin-right: 0rem;
+                                display: grid;
+                                grid-template-columns: 50% 50%;
+                                grid-template-rows: 1fr 2fr;
+                            }
+                            .MainMenu {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                margin-top: 15%;
+                                padding: 0%;
+                                align-items: baseline;
+                                margin-left: 1%;
+                                margin-right: 1%;
+                            }
+                            .Gridmain {
+                                display: grid;
+                                grid-template-columns: 50% 50%;
+                                grid-template-rows: max-content;
+                                margin-left: 0rem;
+                                margin-right: 0rem;
+                            }
+                            #Searching {
+                                grid-area: 1 / 1 / 2 / 3;
+                                padding-left: 0%;
+                                padding-right: 0%;
+                               margin-left: 1rem;
+                               margin-right: 1rem;
+                            }
+                            #Hosting {
+                                grid-area: 3/ 1 / 4 / 3;
+                                margin-right: 0rem;
+                                margin-left: 0rem;
+                            }
+                            #Popular {
+                                grid-area: 2 / 1 / 3 / 3;
+                                margin-left: 0rem;
+                                margin-right: 0rem;
+                            }
+                            #Activity {
+                                display: grid;
+                                grid-template-columns: 50% 50%;
+                                grid-template-rows: max-content;
+                                grid-column-gap: 1em;
+                                grid-row-gap: 1em;
+                                width: 100%;
+                                margin-left: 0rem;
+                                margin-right: 0rem;
+                            }
+                            .NotePop2 {
+                                margin-top: 13%;
+                            }
+                        }
 
                         @media screen and (max-width : 375px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)                                        
                         {
@@ -1128,25 +1176,30 @@ white-space: pre-line;
 
 
                         #Searching {
-                        grid-area: 1 / 1 / 2 / 3;
-                        padding-left: 5%;
-                        padding-right: 5%;
+                            grid-area: 1 / 1 / 2 / 3;
+                            padding-left: 5%;
+                            padding-right: 5%;
+                            margin-left: 0rem;
+                            margin-right: 0rem;
                         }
 
                         #Popular {
                         grid-area: 2 / 1 / 3 / 3;
                         }
-
                         #Hosting {
-                        grid-area: 3/ 1 / 4 / 3;
+                            grid-area: 3/ 1 / 4 / 3;
+                            margin-left: 0rem;
+                            margin-right: 0rem;
                         }
 
                         /* Responsive Grid */
 
                         #Header {
-                        display: grid;
-                        grid-template-columns: 50% 50%;
-                        grid-template-rows: 1fr 2fr;
+                            display: grid;
+                            grid-template-columns: 50% 50%;
+                            grid-template-rows: 1fr 2fr;
+                            margin-left: 0rem;
+                            margin-right: 0rem;
                         }
                         .logoreservia {
                         width: 6em;
@@ -1155,78 +1208,91 @@ white-space: pre-line;
                         padding-top: unset;
                         margin-top: unset;
                         }
+
+                        #Menu {
+                     
+                            margin: 0px;
+                        }
                         .MenuNav {
                         grid-area: 2 / 1 / 3 / 3;
                         padding: 0%;
                         }
 
                         .MainMenu {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: nowrap;
-                        align-content: flex-start;
-                        justify-content: flex-start;
-                        align-items: center;
-                        margin-top: 15%;
-                        padding: 0%;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                            align-content: flex-start;
+                            justify-content: flex-start;
+                            align-items: center;
+                            margin-top: 15%;
+                            padding-left: 0%;
                         }
-
+                        #BarreRecherche {
+                            margin-bottom: 2.5%;
+                            padding-left: 3%;
+                        }
                         .HostingNav {
-                        color: #0065FC;
-                        border-top: none;
-                        border-bottom: 3px solid #0065FC;
-                        padding-top: 0%;
-                        text-decoration: none;
-                        padding-bottom: 13%;
-                        padding-left: 8%;
-                        padding-right: 13%;
+                           
+                            border-top: none;
+                            border-bottom: 3px solid #0065FC;
+                            padding-top: 1%;
+                            text-decoration: none;
+                            padding-bottom: 13%;
+                            padding-left: 8%;
+                            padding-right: 13%;
                         }
                         .HostingNav:hover {
 
-                        color: black;
+                      
                         border-bottom: 3px solid #0065FC;
                         border-top: none;
-                        padding-top: 0%;
+                        padding-top: 1%;
                         padding-bottom: 13%;
                         padding-left: 8%;
                         padding-right: 13%;
                         }
-
+                        #Activity {
+                            display: grid;
+                            grid-template-columns: 100%;
+                            grid-template-rows: max-content;
+                            grid-column-gap: 0em;
+                            grid-row-gap: 1.5em;
+                            width: 100%;
+                            margin-left: 0rem;
+                            margin-right: 0rem;
+                        }
                         .ActivityNav {
-                        border-bottom: 3px solid #f2f2f2;
-                        color: black;
-                        text-decoration: none;
-                        padding-left: 16%;
-                        padding-right: 15%;
-                        padding-bottom: 13%;
-                        padding-top: 0%;
+                            color: black;
+                            border-bottom: 3px solid #f2f2f2;
+                            padding-left: 16%;
+                            padding-right: 15%;
+                            padding-bottom: 13%;
+                            padding-top: 0%;
                         }
                         .ActivityNav:hover {
-                        color: black;
-                        padding-left: 16%;
-                        padding-right: 15%;
-                        padding-bottom: 13%;
-                        padding-top: 0%;
-                        border-bottom: 3px solid #0065FC;
-                        border-top: none;
+                            color: #0065FC;
+                            padding-left: 16%;
+                            padding-right: 15%;
+                            padding-bottom: 13%;
+                            padding-top: 1%;
+                            border-bottom: 3px solid #0065FC;
+                            border-top: none;
                         }
 
                         .Sub {
-                        grid-area: 1/ 2/ 2/ 3;
-                        margin-right: 14%;
-                        margin-top: 9%;
+                            grid-area: 1/ 2/ 2/ 3;
+                            padding-right: 10%;
+                            padding-bottom: 10%;
                         }
                         .Sublink {
-                        float: right;
+                   
                         padding: 5%;
                         margin-right: 2%;
                         text-decoration: none;
                         font-weight: 600;
                         }
-                        .Sublink:hover {
-                        color: black;
-                        cursor: pointer;
-                        }
+                      
 
                         .TextInfo {
                         display: flex;
@@ -1302,7 +1368,11 @@ white-space: pre-line;
                         {
                         display: none;
                         }  
-
+                        #Popular {
+                            grid-area: 2 / 1 / 3 / 3;
+                            margin-left: 0rem;
+                            margin-right: 0rem;
+                        }
 
                         #Populaire {
                         margin-left: 0%;
@@ -1355,11 +1425,11 @@ white-space: pre-line;
                         }
 
                         .NotePop {
-                        margin-top: 10%;
+                            margin-top: 18%;
                         }
 
                         .NotePop2 {
-                        margin-top: 10%;
+                            margin-top: 12%;
                         }
                         /* Hosting Grid Responsive */
                         #Resultats {
