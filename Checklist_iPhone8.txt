@@ -1,0 +1,50 @@
+                                    Résolution
+
+
+
+            Responsive basé sur la résolution d'un iPhone 8:
+                                                            @media only screen 
+                                                             and (device-width : 375px) 
+                                                             and (device-height : 667px) 
+                                                             and (-webkit-device-pixel-ratio : 2) { }
+
+
+                                    Étape 1
+
+                    
+        Modification de la disposition des éléments, en colonnes (2):
+
+                -header 
+                -Texte
+                -Zone de recherche 
+                -Onglets les plus populaires
+                -Onglets hébergements 
+                -Onglets activités
+                -Footer 
+                    -A propos
+                    -Nos hébergements
+                    -Assistance
+                    
+                
+        Disposition des colonnes:
+
+                - Header: 
+                    -50% gauche (187.5px), margin-left 10px, padding-left 10px
+                            -Logo (Reservia)
+                            -Hébergements
+                    -50% droite (187.5px),margin-right 10px, padding 10px
+                            -S'inscrire
+                            -Activités
+
+
+                -Textes et zones de recherche:
+
+                à éditer
+
+
+                
+
+
+
+
+                

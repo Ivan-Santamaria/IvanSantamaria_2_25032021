@@ -1,0 +1,22 @@
+
+Démarrage du projet 
+
+- Création repository GitHub
+- Création des branches de travail du projet
+- Etablissement du cahier des charges
+- Création d'une checklist
+
+
+Structure HTML
+
+- Mise en place de la structure HTML
+- Création des section en vue d'utiliser Grid et flexbox
+- Mise en place des liens hypertexte
+- Sélection des images au format approprié
+- Essai validation W3C
+
+
+Mise en Place CSS
+
+-Création des polices d'écritures
+-
